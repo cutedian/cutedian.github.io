@@ -3,7 +3,11 @@
   <entry>
     <title>写在前面</title>
     <url>/2023/07/13/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/</url>
-    <content><![CDATA[<h2 id="hahaha"><a href="#hahaha" class="headerlink" title="hahaha"></a>hahaha</h2><h3 id="hahaha-1"><a href="#hahaha-1" class="headerlink" title="hahaha"></a>hahaha</h3>]]></content>
+    <content><![CDATA[<h2 id="此文章为何存在"><a href="#此文章为何存在" class="headerlink" title="此文章为何存在"></a>此文章为何存在</h2><p>搭建个人博客不是一件容易的事，也不是仅凭着一腔孤勇就能完成的任务。值得一提的是，该博客搭建全程基于<code>macOS</code>系统。<del>整个过程中，diandian有不下20次想砸电脑的冲动😭</del></p>
+<h3 id="hahaha"><a href="#hahaha" class="headerlink" title="hahaha"></a>hahaha</h3>]]></content>
+      <categories>
+        <category>Summary</category>
+      </categories>
       <tags>
         <tag>Typora</tag>
       </tags>
