@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="Diandian">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    
+        
+            <link rel="preconnect" href="https://npm.elemecdn.com" crossorigin>
+        
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="https://cutedian.github.io/2023/07/14/猪脚说第七期/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+        <meta name="description" content="由Riccardo与Diandian编写完成，主要包括第三次作业编程题解。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="猪脚说第七期">
+<meta property="og:url" content="https://cutedian.github.io/2023/07/14/%E7%8C%AA%E8%84%9A%E8%AF%B4%E7%AC%AC%E4%B8%83%E6%9C%9F/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="由Riccardo与Diandian编写完成，主要包括第三次作业编程题解。">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-07-14T12:46:14.000Z">
+<meta property="article:modified_time" content="2023-07-14T12:50:33.246Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="C">
+<meta property="article:tag" content="answers">
+<meta name="twitter:card" content="summary">
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/images/myfavicon.ico" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/myfavicon.ico">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="/images/myfavicon.ico">
+    <!--- Page Info-->
+    
+    <title>
+        
+            猪脚说第七期 -
+        
+        Diandian Honey Pot
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine@2.2.2/source/fonts/fonts.css">
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine@2.2.2/source/fonts/Satoshi/satoshi.css">
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine@2.2.2/source/fonts/Chillax/chillax.css">
+    <!--- Font Part-->
+    
+    
+    
+    
+
+    <!--- Inject Part-->
+    
+    <script id="hexo-configurations">
+    let Global = window.Global || {};
+    Global.hexo_config = {"hostname":"cutedian.github.io","root":"/","language":"en","path":"search.xml"};
+    Global.theme_config = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":["funny boy"]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":7,"number":true,"expand":true,"init_open":true},"copyright":true,"lazyload":true,"recommendation":{"enable":true,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"busuanzi_counter":{"enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"pjax":true,"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallheaven.png","dark":"/images/wallheaven.png"},"title":"Dian·Stay Curious","subtitle":{"text":["这是点点的蜜罐，进行一些学习心得、实验报告、助教资料的分享。"],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#fff"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":true,"links":{"github":null,"instagram":null,"zhihu":"https://www.zhihu.com/people/ning-gu-de-xi-gua-81","twitter":"https://twitter.com/frozenwate25915?s=21","email":"zhongyd2004@163.com"}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.2.2","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Friends":{"icon":"fa-solid fa-link","path":"/links/"},"Google":{"path":"https://www.google.com/","icon":"fa-brands fa-google"},"Archives":{"path":"/archives/","icon":"fa-regular fa-archive"}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":"Stay curious, stay interesting.","links":{"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Tags":{"path":"/tags","icon":"fa-regular fa-tags"},"Categories":{"path":"/categories","icon":"fa-regular fa-folder"}}},"article_date_format":"YYYY-MM-DD","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":4}},"footerStart":"2023/7/13 11:45:14"};
+    Global.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+    Global.data_config = {"masonry":false};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine@2.2.2/source/fontawesome/fontawesome.min.css">
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine@2.2.2/source/fontawesome/brands.min.css">
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine@2.2.2/source/fontawesome/solid.min.css">
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine@2.2.2/source/fontawesome/regular.min.css">
+    
+    
+    
+    
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <span class="pjax-progress-icon">
+            <i class="fa-solid fa-circle-notch fa-spin"></i>
+        </span>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="main-content-container">
+
+        <div class="main-content-header">
+            <header class="navbar-container">
+    
+    <div class="navbar-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                
+                Diandian Honey Pot
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-house"></i>
+                                        
+                                        HOME
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/links/"  >
+                                    
+                                        
+                                            <i class="fa-solid fa-link"></i>
+                                        
+                                        FRIENDS
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    target="_blank" rel="noopener" href="https://www.google.com/"  >
+                                    
+                                        
+                                            <i class="fa-brands fa-google"></i>
+                                        
+                                        GOOGLE
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/archives/"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-archive"></i>
+                                        
+                                        ARCHIVES
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                    
+                        <li class="navbar-item search search-popup-trigger">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i></div>
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="navbar-drawer">
+        <ul class="drawer-navbar-list">
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/"  >
+                             
+                                
+                                    <i class="fa-regular fa-house"></i>
+                                
+                                HOME
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/links/"  >
+                             
+                                
+                                    <i class="fa-solid fa-link"></i>
+                                
+                                FRIENDS
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        target="_blank" rel="noopener" href="https://www.google.com/"  >
+                             
+                                
+                                    <i class="fa-brands fa-google"></i>
+                                
+                                GOOGLE
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/archives/"  >
+                             
+                                
+                                    <i class="fa-regular fa-archive"></i>
+                                
+                                ARCHIVES
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="main-content-body">
+
+            
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            <div class="article-title">
+                
+                  
+                  
+                    <img src="/images/dspicture.jpg" alt="猪脚说第七期" />
+                  
+                  <h1 class="article-title-cover">猪脚说第七期</h1>
+                
+              </div>
+              
+                     
+            
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="/images/IMG_5846.JPG">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">Diandian</span>
+                            
+                                <span class="author-label">funny boy</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2023-07-14 20:46:14</span>
+        <span class="mobile">2023-07-14 20:46:14</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2023-07-14 20:50:33</span>
+            <span class="mobile">2023-07-14 20:50:33</span>
+            <span class="hover-info">Updated</span>
+        </span>
+    
+
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/DataStructure/">DataStructure</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/C/">C</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/answers/">answers</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>2.9k Words</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>13 Mins</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content markdown-body">
+                <blockquote>
+<p>老规矩：若针对这些题目，同学们有更好更简洁的方法，欢迎来找助教讨论，助教请喝奶茶😍😍。</p>
+</blockquote>
+<h2 id="连续线段"><a href="#连续线段" class="headerlink" title="连续线段"></a>连续线段</h2><p>此题使用链表和数组的解法各有优劣。有些同学在写代码时容易默认输入的点是按x坐标顺序输入的，但其实不然，因此在后续<code>for</code>循环判断时第一层变量为<code>i</code>,第二层变量为<code>j = i + 1</code>，这样就忽略了可能在该线段之前的线段中存在相连的可能性。因此一种实用的做法为先对输入的所有点进行排序，这样在后续判断时也更有逻辑。</p>
+<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span>&#123;</span></span><br><span class="line">    <span class="type">int</span> x1;</span><br><span class="line">    <span class="type">int</span> x2;</span><br><span class="line">    <span class="type">int</span> y1;</span><br><span class="line">    <span class="type">int</span> y2;</span><br><span class="line">&#125;line[<span class="number">201</span>];<span class="comment">//所有线段的点都存储在结构体数组中</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">cmp</span><span class="params">(<span class="type">const</span> <span class="type">void</span> * a, <span class="type">const</span> <span class="type">void</span> * b)</span>&#123;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">node</span>* <span class="title">e1</span> =</span> (<span class="keyword">struct</span> node *)a;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">node</span>* <span class="title">e2</span> =</span> (<span class="keyword">struct</span> node *)b;</span><br><span class="line">    <span class="keyword">if</span>(e1-&gt;x1 &gt; e2-&gt;x1)</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span>(e1-&gt;x1 &lt; e2-&gt;x1)</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> x3=<span class="number">0</span>, y3=<span class="number">0</span>;<span class="comment">//x3和y3存储当前需要判断是否能连接的点</span></span><br><span class="line">    <span class="type">int</span> i, j, n, count[<span class="number">201</span>]=&#123;<span class="number">0</span>&#125;, ans=<span class="number">-1</span>;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;n);</span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d %d %d %d&quot;</span>, &amp;line[i].x1, &amp;line[i].y1, &amp;line[i].x2, &amp;line[i].y2);</span><br><span class="line">    qsort(line, n, <span class="keyword">sizeof</span>(<span class="keyword">struct</span> node), cmp);<span class="comment">//将输入的线段按照左端点横坐标排序</span></span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; n; i++)&#123;</span><br><span class="line">        x3 = line[i].x2;</span><br><span class="line">        y3 = line[i].y2;</span><br><span class="line">        <span class="keyword">for</span>(j = i + <span class="number">1</span>; j &lt; n; j++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(line[j].x1 == x3 &amp;&amp; line[j].y1 == y3)&#123;</span><br><span class="line">                count[i]++;</span><br><span class="line">                x3=line[j].x2;</span><br><span class="line">                y3=line[j].y2;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;<span class="comment">//因为已经排好序，所以直接顺位判断是否能连接，能连接则count++</span></span><br><span class="line">    j=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(count[i]&gt;ans)&#123;</span><br><span class="line">            ans=count[i];</span><br><span class="line">            j=i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;<span class="comment">//找到最大的count，该循环为经典的寻找最大值or最小值的方法</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d %d %d\n&quot;</span>, ans+<span class="number">1</span>, line[j].x1, line[j].y1);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="空闲空间申请模拟（最佳适应）"><a href="#空闲空间申请模拟（最佳适应）" class="headerlink" title="空闲空间申请模拟（最佳适应）"></a>空闲空间申请模拟（最佳适应）</h2><p>该题的题面较长，大家一定要看清楚每一个要求，踩坑的地方包括但不限于：</p>
+<p>1、找不到足够大的空闲快，则什么操作都不发生；</p>
+<p>2、并不是简单地寻找到空间恰好相等的节点，而是遍历一圈找到满足要求的空间最小的节点进行操作；</p>
+<p>3、在删除节点时如果使用<code>free()</code>函数，则一定要保证这个空间后续不会再被使用；</p>
+<p>4、一定要注意！不能访问到空指针。形如<code>if(p-&gt;length!=0 &amp;&amp; p != NULL)</code>的形式仍是不可以的，因为<code>p</code>如果是空指针，逻辑上if条件确实不会成立，但仍存在<code>p-&gt;length!=0</code>的判断，这样就访问到了空指针。</p>
+<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span>&#123;</span></span><br><span class="line">    <span class="type">int</span> address;</span><br><span class="line">    <span class="type">int</span> length;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">node</span> *<span class="title">next</span>;</span></span><br><span class="line">&#125;dot[<span class="number">512</span>];</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> i, j, n, op, min, flag;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">node</span> *<span class="title">p</span>, *<span class="title">q</span>, *<span class="title">r</span>, *<span class="title">r_be</span>, *<span class="title">now</span>;</span></span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;n);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d %d&quot;</span>, &amp;dot[<span class="number">0</span>].address, &amp;dot[<span class="number">0</span>].length);</span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">1</span>; i &lt; n; i++)&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d %d&quot;</span>, &amp;dot[i].address, &amp;dot[i].length);</span><br><span class="line">        dot[i<span class="number">-1</span>].next = (<span class="keyword">struct</span> node*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">struct</span> node));</span><br><span class="line">        dot[i<span class="number">-1</span>].next = &amp;dot[i];</span><br><span class="line">    &#125;<span class="comment">//每次输入的时候，让前一节点的next指向当前节点，因此需先输入第0个节点</span></span><br><span class="line">    now = dot[n<span class="number">-1</span>].next = &amp;dot[<span class="number">0</span>];<span class="comment">//将物理意义上的最后一个节点与第一个节点相连</span></span><br><span class="line">    q = &amp;dot[n<span class="number">-1</span>];</span><br><span class="line">    <span class="keyword">while</span>((<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;op))!=EOF)&#123;</span><br><span class="line">        r = (<span class="keyword">struct</span> node*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">struct</span> node));</span><br><span class="line">        r_be = (<span class="keyword">struct</span> node*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">struct</span> node));</span><br><span class="line">        <span class="keyword">if</span>(op == <span class="number">-1</span>)</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            flag = <span class="number">0</span>;</span><br><span class="line">            p = now;</span><br><span class="line">            <span class="keyword">for</span>(q = p; q-&gt;next != p; q = q-&gt;next);</span><br><span class="line">            min = <span class="number">999999</span>;<span class="comment">//“新的开始”，每次进循环为min赋初值为一个较大的数</span></span><br><span class="line">            <span class="keyword">do</span>&#123;</span><br><span class="line">                <span class="keyword">if</span>(p-&gt;length&gt;=op &amp;&amp; p-&gt;length &lt; min)&#123;</span><br><span class="line">                    r = p;</span><br><span class="line">                    r_be = q;</span><br><span class="line">                    min = p-&gt;length;</span><br><span class="line">                    flag = <span class="number">1</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                q = p;</span><br><span class="line">                p = p-&gt;next;</span><br><span class="line">            &#125;<span class="keyword">while</span>(p != now);<span class="comment">//do-while循环结构可以有效循环遍历一圈，因为其先执行操作再判断</span></span><br><span class="line">            <span class="keyword">if</span>(flag == <span class="number">1</span>)&#123;</span><br><span class="line">                <span class="keyword">if</span>(r-&gt;length &gt; op)&#123;</span><br><span class="line">                    r-&gt;length -= op;</span><br><span class="line">                    now = r;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span> <span class="keyword">if</span>(r-&gt;length == op)&#123;</span><br><span class="line">                    r-&gt;length = <span class="number">0</span>;</span><br><span class="line">                    <span class="keyword">if</span>(r-&gt;next != r)&#123;</span><br><span class="line">                        now = r-&gt;next;</span><br><span class="line">                        r_be-&gt;next = r-&gt;next;</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">else</span>&#123;</span><br><span class="line">                        now = <span class="literal">NULL</span>;</span><br><span class="line">                    &#125;<span class="comment">//特判：如果当前只剩一个节点，则直接让这个节点为NULL</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    p = now;</span><br><span class="line">    <span class="keyword">do</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(p == <span class="literal">NULL</span>)</span><br><span class="line">            <span class="keyword">break</span>;<span class="comment">//特判：如果当前节点已为空，相当于全部删除完，什么都不输出</span></span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;%d %d\n&quot;</span>, p-&gt;address, p-&gt;length);</span><br><span class="line">            p = p-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;<span class="keyword">while</span>(p != now);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="多项式相乘"><a href="#多项式相乘" class="headerlink" title="多项式相乘"></a>多项式相乘</h2><p>本题需要注意：</p>
+<p>1、链表与数组均可解决此问题，各有优劣；</p>
+<p>2、注意数据范围，应用<code>long long</code>存储指数和系数。</p>
+<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">duo</span>&#123;</span></span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> xi;</span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> zhi;</span><br><span class="line">&#125;a[<span class="number">81</span>], b[<span class="number">81</span>], ans[<span class="number">6561</span>];</span><br><span class="line"><span class="type">int</span> <span class="title function_">cmp</span><span class="params">(<span class="type">const</span> <span class="type">void</span> *a, <span class="type">const</span> <span class="type">void</span> *b)</span>&#123;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">duo</span>* <span class="title">ia</span> =</span> (<span class="keyword">struct</span> duo*)a;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">duo</span>* <span class="title">ib</span> =</span> (<span class="keyword">struct</span> duo*)b;</span><br><span class="line">    <span class="keyword">if</span>((ia-&gt;zhi &lt; ib-&gt;zhi) || ((ia-&gt;zhi == ib-&gt;zhi) &amp;&amp; (ia-&gt;xi &gt; ib-&gt;xi)))</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">&#125;<span class="comment">//按照指数从大到小排列，若指数相同，则系数从小到大排列</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> i=<span class="number">0</span>, j=<span class="number">0</span>, k=<span class="number">0</span>, i1, j1, k1;</span><br><span class="line">    <span class="type">char</span> c1, c2;</span><br><span class="line">    <span class="keyword">while</span>(<span class="number">1</span>)&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%lld %lld&quot;</span>, &amp;a[i].xi, &amp;a[i].zhi);</span><br><span class="line">        c1 = getchar();</span><br><span class="line">        i++;</span><br><span class="line">        <span class="keyword">if</span>(c1 == <span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">    &#125;<span class="comment">//用此种方法可以实现换行时结束读入，且\n与\r\n都可，请大家自己思考为什么</span></span><br><span class="line">    <span class="keyword">while</span>(<span class="number">1</span>)&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%lld %lld&quot;</span>, &amp;b[j].xi, &amp;b[j].zhi);</span><br><span class="line">        c2 = getchar();</span><br><span class="line">        j++;</span><br><span class="line">        <span class="keyword">if</span>(c2 == <span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    i1 = i;</span><br><span class="line">    j1 = j;</span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; i1; i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(j = <span class="number">0</span>; j &lt; j1; j++)&#123;</span><br><span class="line">            ans[k].xi = a[i].xi * b[j].xi;</span><br><span class="line">            ans[k].zhi = a[i].zhi + b[j].zhi;</span><br><span class="line">            k++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;<span class="comment">//多项式相乘法则</span></span><br><span class="line">    k1 = k;</span><br><span class="line">    qsort(ans, k1, <span class="keyword">sizeof</span>(<span class="keyword">struct</span> duo), cmp);<span class="comment">//排序，排完序后肯定会有指数相同的相邻项</span></span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; k1; i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(j = <span class="number">1</span>; (j &lt; k1) &amp;&amp; (i + j &lt; k1); j++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(ans[i+j].zhi == ans[i].zhi)&#123;</span><br><span class="line">                ans[i].xi += ans[i+j].xi;</span><br><span class="line">                ans[i+j].zhi = <span class="number">0</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">    &#125;<span class="comment">//消除指数相同的项，系数全部相加</span></span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; k1 - <span class="number">1</span>; i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(ans[i].zhi != <span class="number">0</span>)</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;%lld %lld &quot;</span>, ans[i].xi, ans[i].zhi);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%lld %lld &quot;</span>, ans[k1<span class="number">-1</span>].xi, ans[k1<span class="number">-1</span>].zhi);<span class="comment">//为防止全部都为0，最后必须输出一次</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="文件加密（环）"><a href="#文件加密（环）" class="headerlink" title="文件加密（环）"></a>文件加密（环）</h2><p>该题为本次作业的重重重灾区！问题主要出在：</p>
+<p>1、对于输入的字符串没有预处理末尾的换行符，或者处理方式有问题，导致后面全部出错；</p>
+<p>2、原密钥对应的最后一个字符的新密钥没有被赋值，导致最终密钥表缺失；</p>
+<p>3、对链表的操作不熟悉，对于表头的使用、对于链表节点的插入、删除等操作出现问题；</p>
+<p>4、使用野指针或访问空指针，定义局部指针时未初始化。</p>
+<p>一些建议：</p>
+<p>1、增加对链表的熟悉程度，插入、删除等操作可以自己总结成一个模版；</p>
+<p>2、对于复杂的题目，模块化非常重要。自定义好各司其职的函数，<code>main</code>函数里保留逻辑部分；</p>
+<p>3、调试方法与技巧！一定要善于使用<code>printf</code>函数进行打印调试。</p>
+<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">formation</span>&#123;</span></span><br><span class="line">    <span class="type">char</span> c;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">formation</span> *<span class="title">link</span>;</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="type">void</span> <span class="title function_">del</span><span class="params">(<span class="type">char</span> * b, <span class="type">char</span> * c)</span>&#123;</span><br><span class="line">    <span class="type">int</span> i=<span class="number">0</span>, j=<span class="number">0</span>, k=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(b[i] != <span class="string">&#x27;\0&#x27;</span>)&#123;</span><br><span class="line">        <span class="keyword">for</span>(j = <span class="number">0</span>; j &lt; k; j++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(b[i]==c[j])</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(j==k)</span><br><span class="line">            c[k++]=b[i];</span><br><span class="line">        i++;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;<span class="comment">//对于输入的字符串b，删除其重复出现的字母，结果保存到c数组里</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">sheet</span><span class="params">(<span class="type">char</span> * b, <span class="type">char</span> * c)</span>&#123;</span><br><span class="line">    <span class="type">char</span> re[<span class="number">95</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">    <span class="type">int</span> i, j, k=<span class="number">0</span>, tmp[<span class="number">95</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">    del(b,c);</span><br><span class="line">    j = (<span class="type">int</span>)<span class="built_in">strlen</span>(c);</span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; j; i++)</span><br><span class="line">        tmp[c[i]-<span class="string">&#x27; &#x27;</span>]++;</span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; <span class="number">95</span>; i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(tmp[i] == <span class="number">0</span>)</span><br><span class="line">            re[k++] = i + <span class="string">&#x27; &#x27;</span>;</span><br><span class="line">    &#125;<span class="comment">//将剩余的且未出现过的可见字符保存到re数组里</span></span><br><span class="line">    <span class="built_in">strcat</span>(c,re);<span class="comment">//将re数组追加到c数组后，形成原密钥</span></span><br><span class="line">&#125;<span class="comment">//对于输入的字符串b，形成原密钥c</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">final</span><span class="params">(<span class="type">char</span> * b)</span>&#123;</span><br><span class="line">    <span class="type">int</span> i, j=<span class="number">0</span>, k=<span class="number">0</span>;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">formation</span> *<span class="title">List</span> =</span> <span class="literal">NULL</span>, *p = <span class="literal">NULL</span>, *r = <span class="literal">NULL</span>;</span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; <span class="number">95</span>; i++)&#123;</span><br><span class="line">        r = (<span class="keyword">struct</span> formation *)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">struct</span> formation));</span><br><span class="line">        r-&gt;c = b[j++];</span><br><span class="line">        <span class="keyword">if</span>(List == <span class="literal">NULL</span>)</span><br><span class="line">            List = p = r;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            p-&gt;link = r;</span><br><span class="line">            p = p-&gt;link;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    p-&gt;link = List;<span class="comment">//到此为止，循环链表已经建立</span></span><br><span class="line">    r = p;</span><br><span class="line">    p = p-&gt;link;</span><br><span class="line">    k = p-&gt;c;</span><br><span class="line">    <span class="keyword">while</span>(p-&gt;link != p)&#123;</span><br><span class="line">        r-&gt;link = p-&gt;link;</span><br><span class="line">        j = p-&gt;c;</span><br><span class="line">        <span class="built_in">free</span>(p);</span><br><span class="line">        p = (<span class="keyword">struct</span> formation *)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">struct</span> formation));<span class="comment">//free过后，记得再申请</span></span><br><span class="line">        p = r-&gt;link;</span><br><span class="line">        <span class="keyword">for</span>(i = <span class="number">1</span>; i &lt; j; i++, r=p, p=p-&gt;link);<span class="comment">//只一条for语句，注意移动次数，便寻得所需节点</span></span><br><span class="line">        b[j<span class="number">-32</span>] = p-&gt;c;<span class="comment">//建立该字符与原密钥的的字符的对应关系</span></span><br><span class="line">    &#125;</span><br><span class="line">    b[p-&gt;c <span class="number">-32</span>] = k;<span class="comment">//最后剩下的字符的密文为原密钥的第一个字符</span></span><br><span class="line">&#125;<span class="comment">//将原密钥b进行处理，形成密钥表，依旧保存到b中</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">char</span> s[<span class="number">33</span>]=&#123;<span class="number">0</span>&#125;, pre[<span class="number">95</span>]=&#123;<span class="number">0</span>&#125;, c;</span><br><span class="line">    FILE *in = fopen(<span class="string">&quot;in.txt&quot;</span>, <span class="string">&quot;r&quot;</span>);</span><br><span class="line">    FILE *out = fopen(<span class="string">&quot;in_crpyt.txt&quot;</span>, <span class="string">&quot;w&quot;</span>);</span><br><span class="line">    gets(s);</span><br><span class="line">    sheet(s, pre);</span><br><span class="line">    final(pre);<span class="comment">//逻辑部分在main函数里实现，具体操作可适当封装成函数，这样调试起来也方便发现错误</span></span><br><span class="line">    <span class="keyword">while</span> ((c = fgetc(in)) != EOF)&#123;</span><br><span class="line">        <span class="keyword">if</span>(c&gt;=<span class="number">32</span> &amp;&amp; c&lt;=<span class="number">126</span>)</span><br><span class="line">            fputc(pre[c<span class="number">-32</span>], out);</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            fputc(c, out);</span><br><span class="line">    &#125;<span class="comment">//注意不可见字符要原样输出！</span></span><br><span class="line">    fclose(in);</span><br><span class="line">    fclose(out);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="词频统计（数组或链表实现）"><a href="#词频统计（数组或链表实现）" class="headerlink" title="词频统计（数组或链表实现）"></a>词频统计（数组或链表实现）</h2><p>本题使用数组或链表都是可以做的，但个人认为数组会更简洁。需要注意的是，题目中明确说明<strong>单词仅为有字母组成的字符序列</strong>，但并没有说<strong>单词与单词之间一定由空格隔开</strong>，不能只看样例而轻下论断，因此使用<code>fscanf</code>读取单词肯定是会出问题的。</p>
+<p>一些建议：当明确地需要执行排序操作时，数组比链表更为简洁。</p>
+<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;ctype.h&gt;</span></span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span>&#123;</span></span><br><span class="line">    <span class="type">char</span> word[<span class="number">51</span>];</span><br><span class="line">    <span class="type">int</span> count;</span><br><span class="line">&#125;wordlist[<span class="number">512</span>];</span><br><span class="line"><span class="type">int</span> <span class="title function_">cmp</span><span class="params">(<span class="type">const</span> <span class="type">void</span> * a, <span class="type">const</span> <span class="type">void</span> *b)</span>&#123;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">node</span> *<span class="title">e1</span> =</span> (<span class="keyword">struct</span> node*)a;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">node</span> *<span class="title">e2</span> =</span> (<span class="keyword">struct</span> node*)b;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">strcmp</span>(e1-&gt;word,e2-&gt;word);</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">    <span class="type">char</span> table[<span class="number">5120</span>]=&#123;<span class="number">0</span>&#125;, c;</span><br><span class="line">    FILE *in = fopen(<span class="string">&quot;article.txt&quot;</span>,<span class="string">&quot;r&quot;</span>);</span><br><span class="line">    <span class="type">int</span> i=<span class="number">0</span>, j, k, len, total=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>((c = fgetc(in)) != EOF)</span><br><span class="line">        table[i++] = c;<span class="comment">//将文件中所有字符读进一个字符串数组</span></span><br><span class="line">    len = i;</span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; len;)&#123;</span><br><span class="line">        <span class="keyword">if</span>(!<span class="built_in">isalpha</span>(table[i]))<span class="comment">//如果不是字母</span></span><br><span class="line">            i++;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            j = <span class="number">0</span>;<span class="comment">//“新的开始”，每次需要加入新的单词时，给j赋初值为0</span></span><br><span class="line">            <span class="keyword">while</span>(<span class="built_in">isalpha</span>(table[i]))&#123;</span><br><span class="line">                <span class="keyword">if</span>(<span class="built_in">islower</span>(table[i]))<span class="comment">//如果是小写字母</span></span><br><span class="line">                    wordlist[total].word[j++] = table[i];</span><br><span class="line">                <span class="keyword">else</span> <span class="keyword">if</span>(<span class="built_in">isupper</span>(table[i]))<span class="comment">//如果是大写字母</span></span><br><span class="line">                    wordlist[total].word[j++] = table[i] + <span class="number">32</span>;</span><br><span class="line">                i++;</span><br><span class="line">            &#125;</span><br><span class="line">            wordlist[total].word[j] = <span class="string">&#x27;\0&#x27;</span>;<span class="comment">//最后一定要加上&#x27;\0&#x27;</span></span><br><span class="line">            wordlist[total].count = <span class="number">1</span>;<span class="comment">//让该单词的出现次数为1</span></span><br><span class="line">            <span class="keyword">for</span>(k = <span class="number">0</span>; k &lt; total; k++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(<span class="built_in">strcmp</span>(wordlist[k].word,wordlist[total].word) == <span class="number">0</span>)&#123;</span><br><span class="line">                    wordlist[k].count++;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;<span class="comment">//立即在已有的字母表中查找，若存在，则total维持原值，且对应单词count++</span></span><br><span class="line">            <span class="keyword">if</span>(k == total)</span><br><span class="line">                total++;<span class="comment">//若该单词不存在于现有单词表中，total++，表示将其加入单词表</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    qsort(wordlist, total, <span class="keyword">sizeof</span>(<span class="keyword">struct</span> node), cmp);<span class="comment">//按照字典序排序</span></span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; total; i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%s %d\n&quot;</span>, wordlist[i].word, wordlist[i].count);</span><br><span class="line">    fclose(in);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p><em>Author: diandian, Riccardo</em></p>
+
+            </div>
+
+            
+                <div class="post-copyright-info">
+                    <div class="article-copyright-info-container">
+    <ul>
+        <li><strong>Title:</strong> 猪脚说第七期</li>
+        <li><strong>Author:</strong> Diandian</li>
+        <li><strong>Created at:</strong> 2023-07-14 20:46:14</li>
+        
+            <li>
+                <strong>Updated at:</strong> 2023-07-14 20:50:33
+            </li>
+        
+        <li>
+            <strong>Link:</strong> https://cutedian.github.io/2023/07/14/猪脚说第七期/
+        </li>
+        <li>
+            <strong>License:</strong> This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a>.
+        </li>
+    </ul>
+</div>
+
+                </div>
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/C/">#C</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/answers/">#answers</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+  <div class="recommended-article">
+   <div class="recommended-desktop">
+    <div class="recommended-article-header">
+     <i aria-hidden="true"></i><span>推荐阅读</span>
+    </div>
+    <div class="recommended-article-group"><a class="recommended-article-item" href="/2023/07/14/猪脚说第六期/" title="猪脚说第六期" rel="bookmark">
+  <img src="/images/dspicture.jpg" alt="猪脚说第六期">
+  <span class="title">猪脚说第六期</span>
+</a><a class="recommended-article-item" href="/2023/07/14/猪脚说第五期/" title="猪脚说第五期" rel="bookmark">
+  <img src="/images/dspicture.jpg" alt="猪脚说第五期">
+  <span class="title">猪脚说第五期</span>
+</a><a class="recommended-article-item" href="/2023/07/14/猪脚说第四期/" title="猪脚说第四期" rel="bookmark">
+  <img src="/images/dspicture.jpg" alt="猪脚说第四期">
+  <span class="title">猪脚说第四期</span>
+</a></div>
+   </div>
+   <div class="recommended-mobile">
+   <div class="recommended-article-header">
+     <i aria-hidden="true"></i><span>推荐阅读</span>
+   </div>
+   <div class="recommended-article-group"><a class="recommended-article-item" href="/2023/07/14/猪脚说第六期/" title="猪脚说第六期" rel="bookmark">
+  <img src="/images/dspicture.jpg" alt="猪脚说第六期">
+  <span class="title">猪脚说第六期</span>
+</a><a class="recommended-article-item" href="/2023/07/14/猪脚说第五期/" title="猪脚说第五期" rel="bookmark">
+  <img src="/images/dspicture.jpg" alt="猪脚说第五期">
+  <span class="title">猪脚说第五期</span>
+</a></div>
+   </div>
+  </div>
+
+            
+                <div class="article-nav">
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                            rel="next"
+                            href="/2023/07/14/%E7%8C%AA%E8%84%9A%E8%AF%B4%E7%AC%AC%E5%85%AD%E6%9C%9F/"
+                            >
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item">猪脚说第六期</span>
+                                    <span class="post-nav-item">Next posts</span>
+                                </span>
+                                <span class="right arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+
+            
+                <div class="comment-container">
+                    <div class="comments-container">
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fa-solid fa-comments"></i>&nbsp;Comments
+    </div>
+    
+
+        
+            
+    <div id="giscus-container"></div>
+    <script data-pjax defer>
+        async function loadGiscus() {
+            const giscusConfig = {
+                'src': 'https://giscus.app/client.js',
+                'data-repo': 'cutedian/comments',
+                'data-repo-id': 'R_kgDOJ7Y5AA',
+                'data-category': 'Announcements',
+                'data-category-id': 'DIC_kwDOJ7Y5AM4CX4Sg',
+                'data-mapping': 'title',
+                'data-strict': '0',
+                'data-reactions-enabled': '1',
+                'data-emit-metadata': '1',
+                'data-theme': 'preferred_color_scheme',
+                'data-lang': 'en',
+                'data-input-position': 'bottom',
+                'data-loading': 'not-lazy',
+                'crossorigin': 'anonymous',
+                'async': true
+            }
+            const giscusScript = document.createElement('script');
+            for (const key in giscusConfig) {
+                giscusScript.setAttribute(key, giscusConfig[key]);
+            }
+            document.getElementById('giscus-container').appendChild(giscusScript);
+        }
+        if ('true') {
+            let loadGiscusTimeout = setTimeout(() => {
+                loadGiscus();
+                clearTimeout(loadGiscusTimeout);
+            }, 1000);
+        } else {
+            window.addEventListener('DOMContentLoaded', loadGiscus);
+        }
+    </script>
+
+
+        
+        
+    
+</div>
+
+                </div>
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">On this page</div>
+        <div class="page-title">猪脚说第七期</div>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%9E%E7%BB%AD%E7%BA%BF%E6%AE%B5"><span class="nav-number">1.</span> <span class="nav-text">连续线段</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A9%BA%E9%97%B2%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7%E6%A8%A1%E6%8B%9F%EF%BC%88%E6%9C%80%E4%BD%B3%E9%80%82%E5%BA%94%EF%BC%89"><span class="nav-number">2.</span> <span class="nav-text">空闲空间申请模拟（最佳适应）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%9A%E9%A1%B9%E5%BC%8F%E7%9B%B8%E4%B9%98"><span class="nav-number">3.</span> <span class="nav-text">多项式相乘</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E5%8A%A0%E5%AF%86%EF%BC%88%E7%8E%AF%EF%BC%89"><span class="nav-number">4.</span> <span class="nav-text">文件加密（环）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%8D%E9%A2%91%E7%BB%9F%E8%AE%A1%EF%BC%88%E6%95%B0%E7%BB%84%E6%88%96%E9%93%BE%E8%A1%A8%E5%AE%9E%E7%8E%B0%EF%BC%89"><span class="nav-number">5.</span> <span class="nav-text">词频统计（数组或链表实现）</span></a></li></ol>
+
+    </div>
+</div>
+            </div>
+        
+    </div>
+</div>
+
+
+                
+
+            </div>
+            
+            
+
+        </div>
+
+        <div class="main-content-footer">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info">
+            &copy;
+            
+              <span>2023</span>
+              -
+            
+            2023&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">Diandian</a>
+        </div>
+        
+            <script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    <span id="busuanzi_container_site_uv" class="busuanzi_container_site_uv">
+                        VISITOR COUNT&nbsp;<span id="busuanzi_value_site_uv" class="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="busuanzi_container_site_pv">
+                        TOTAL PAGE VIEWS&nbsp;<span id="busuanzi_value_site_pv" class="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            <span class="powered-by-container">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" href="https://hexo.io">Hexo</a></span>
+                <br>
+            <span class="theme-version-container">THEME&nbsp;<a class="theme-version" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.2.2</a>
+        </div>
+        
+        
+        
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
+        
+        
+        
+            <script async data-pjax>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-side-tools-container">
+        <div class="side-tools-container">
+    <ul class="hidden-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-expand-width flex-center">
+            <i class="fa-regular fa-expand"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="visible-tools-list">
+        <li class="right-bottom-tools toggle-tools-list flex-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fa-solid fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fa-solid fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+
+</main>
+
+
+
+<script src="https://evan.beee.top/projects/hexo-theme-redefine@2.2.2/source/js/utils.js"></script><script src="https://evan.beee.top/projects/hexo-theme-redefine@2.2.2/source/js/main.js"></script><script src="https://evan.beee.top/projects/hexo-theme-redefine@2.2.2/source/js/layouts/navbarShrink.js"></script><script src="https://evan.beee.top/projects/hexo-theme-redefine@2.2.2/source/js/tools/scrollTopBottom.js"></script><script src="https://evan.beee.top/projects/hexo-theme-redefine@2.2.2/source/js/tools/lightDarkSwitch.js"></script>
+
+
+    <script src="https://evan.beee.top/projects/hexo-theme-redefine@2.2.2/source/js/tools/localSearch.js"></script>
+
+
+
+    <script src="https://evan.beee.top/projects/hexo-theme-redefine@2.2.2/source/js/tools/codeBlock.js"></script>
+
+
+
+    <script src="https://evan.beee.top/projects/hexo-theme-redefine@2.2.2/source/js/layouts/lazyload.js"></script>
+
+
+
+    <script src="https://evan.beee.top/projects/hexo-theme-redefine@2.2.2/source/js/tools/runtime.js"></script>
+    <script src="https://evan.beee.top/projects/hexo-theme-redefine@2.2.2/source/js/libs/odometer.min.js"></script>
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine@2.2.2/source/assets/odometer-theme-minimal.css">
+
+
+
+  <script src="https://evan.beee.top/projects/hexo-theme-redefine@2.2.2/source/js/libs/Typed.min.js"></script>
+  <script src="https://evan.beee.top/projects/hexo-theme-redefine@2.2.2/source/js/plugins/typed.js"></script>
+
+
+
+
+
+
+<div class="post-scripts pjax">
+    
+        <script src="https://evan.beee.top/projects/hexo-theme-redefine@2.2.2/source/js/tools/tocToggle.js"></script><script src="https://evan.beee.top/projects/hexo-theme-redefine@2.2.2/source/js/libs/anime.min.js"></script><script src="https://evan.beee.top/projects/hexo-theme-redefine@2.2.2/source/js/layouts/toc.js"></script><script src="https://evan.beee.top/projects/hexo-theme-redefine@2.2.2/source/js/plugins/tabs.js"></script>
+    
+</div>
+
+
+    <script src="https://evan.beee.top/projects/hexo-theme-redefine@2.2.2/source/js/libs/pjax.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax',
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            Global.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            Global.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            Global.refresh();
+        });
+    });
+</script>
+
+
+
+
+</body>
+</html>
