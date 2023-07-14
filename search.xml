@@ -94,14 +94,14 @@
   <entry>
     <title>猪脚说第一期</title>
     <url>/2023/07/14/%E7%8C%AA%E8%84%9A%E8%AF%B4%E7%AC%AC%E4%B8%80%E6%9C%9F/</url>
-    <content><![CDATA[<h2 id="一、什么是猪脚说"><a href="#一、什么是猪脚说" class="headerlink" title="一、什么是猪脚说"></a>一、什么是猪脚说</h2><p>为了改善同学们的上机体验，减轻同学们的压力，集中回答编程中常见问题，继承上一辈助教的优良传统，我们<strong>为大家精心准备了猪脚说</strong>。</p>
+    <content><![CDATA[<h2 id="什么是猪脚说"><a href="#什么是猪脚说" class="headerlink" title="什么是猪脚说"></a>什么是猪脚说</h2><p>为了改善同学们的上机体验，减轻同学们的压力，集中回答编程中常见问题，继承上一辈助教的优良传统，我们<strong>为大家精心准备了猪脚说</strong>。</p>
 <p>猪脚说，就是<del>猪脚</del>助教们想对大家说的话。每次上机后，我们会及时总结大家<strong>提问相对较多</strong>或<strong>比较重要</strong>的问题，在猪脚说中以详细的篇幅加以阐述，希望同学们或多或少得到一些启发。</p>
 <p>猪脚说包括但不限于<strong>共性问题</strong>, <strong>coding 小技巧</strong>, <strong>课外习题</strong>。</p>
-<h2 id="二、重要知识点"><a href="#二、重要知识点" class="headerlink" title="二、重要知识点"></a>二、重要知识点</h2><h3 id="2-1-指针详详详解"><a href="#2-1-指针详详详解" class="headerlink" title="2.1 指针详详详解"></a>2.1 指针详详详解</h3><h4 id="2-1-1-指针与地址"><a href="#2-1-1-指针与地址" class="headerlink" title="2.1.1 指针与地址"></a>2.1.1 指针与地址</h4><p>考虑如下代码，发生了什么？</p>
+<h2 id="重要知识点"><a href="#重要知识点" class="headerlink" title="重要知识点"></a>重要知识点</h2><h3 id="指针详详详解"><a href="#指针详详详解" class="headerlink" title="指针详详详解"></a>指针详详详解</h3><h4 id="指针与地址"><a href="#指针与地址" class="headerlink" title="指针与地址"></a>指针与地址</h4><p>考虑如下代码，发生了什么？</p>
 <div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> a = <span class="number">10</span>;</span><br><span class="line"><span class="type">int</span> *p = &amp;a;</span><br></pre></td></tr></table></figure></div>
 
 <p>要回答这个问题，我们要从最开始的地方说起。</p>
-<h5 id="1-你好，世界！"><a href="#1-你好，世界！" class="headerlink" title="1. 你好，世界！"></a>1. 你好，世界！</h5><div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="code"><pre><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;Hello World!\n&quot;</span>);</span><br></pre></td></tr></table></figure></div>
+<h5 id="你好，世界！"><a href="#你好，世界！" class="headerlink" title="你好，世界！"></a>你好，世界！</h5><div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="code"><pre><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;Hello World!\n&quot;</span>);</span><br></pre></td></tr></table></figure></div>
 
 <p>我们知道，数据总是存储在计算机里的。我们要打印的字符串，应该存在哪里呢？为了便于说明这个问题，我们把计算机内部存储数据的地方<strong>想象成一个大柜子，柜子有一个一个的抽屉</strong>；每个抽屉的容量是有限的，只能放得下一个字符，也就是一个<code>char</code>的内容。这里为了避免引入“字节”的概念，给出如下的大小关系：<code>4个char的大小 = 1个int的大小</code>，<code>8个char的大小 = 2个int的大小 = 1个double的大小 = 1个long long</code>的大小。</p>
 <p>上述语句中的字符串，用<strong>双引号</strong>括起来，称为<strong>“字符串字面值常量”</strong>。作为字符串，它由若干字符拼接而成，后来的故事我们都知道了，在它的最后还有一个看不见的<code>&#39;\0&#39;</code>作为结束的标志；作为常量，这类字符串的内容不能被修改。</p>
@@ -113,7 +113,7 @@
                       alt="截屏2023-02-24 15.50.21" style="zoom:40%;" 
                 >
 
-<h5 id="2-变量"><a href="#2-变量" class="headerlink" title="2. 变量"></a>2. 变量</h5><div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">char</span> c = <span class="string">&#x27;c&#x27;</span>;</span><br><span class="line"><span class="type">int</span>  i = <span class="number">10</span>;</span><br></pre></td></tr></table></figure></div>
+<h5 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h5><div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">char</span> c = <span class="string">&#x27;c&#x27;</span>;</span><br><span class="line"><span class="type">int</span>  i = <span class="number">10</span>;</span><br></pre></td></tr></table></figure></div>
 
 <p>后来我们学了变量，它们当然也装在这个大柜子里。如果这只是个有很多抽屉的柜子，那么数据的存取将变得异常困难，一个很显然的做法是，<strong>为每个抽屉编号</strong>。但另一个问题又来了，计算机自然可以通过编号访问数据；但作为编程者，我们并不知道每个变量存在哪个编号的抽屉里。于是另一个很显然的做法是，我们可以为存有变量的抽屉<strong>贴上标签</strong>，这就是<strong>标识符</strong>，例如<code>c</code>和<code>i</code>。</p>
 <img  
@@ -125,7 +125,7 @@
 
 <p><strong>特别要注意的是，<code>int</code>变量<code>i</code>占用了 4 个抽屉。</strong>有了这个模型，我们就能知道<code>int i = 10;</code>中，<code>i</code>表示的是存放了数字 10 的那 4 个抽屉的标签；它的编号是 21；从编号 21 开始之所以放了 4 个抽屉，是类型<code>int</code>决定的。</p>
 <p><strong>后来我们知道了，这个编号，就是指针。指针，就是地址。</strong></p>
-<h5 id="3-回答一下前面的问题"><a href="#3-回答一下前面的问题" class="headerlink" title="3. 回答一下前面的问题"></a>3. 回答一下前面的问题</h5><img  
+<h5 id="回答一下前面的问题"><a href="#回答一下前面的问题" class="headerlink" title="回答一下前面的问题"></a>回答一下前面的问题</h5><img  
                      lazyload
                      src="/images/loading.svg"
                      data-src="/images/assets1/截屏2023-02-24 16.22.14.png"
@@ -143,7 +143,7 @@
 </ul>
 </li>
 </ul>
-<h5 id="4-指针的使用"><a href="#4-指针的使用" class="headerlink" title="4. 指针的使用"></a>4. 指针的使用</h5><p>有了指针，在我们的程序里，要访问一个变量就有两种方法了。一方面，可以通过<strong>抽屉的标签</strong>，也就是<strong>变量名</strong>访问；另一方面，可以通过<strong>抽屉的编号 —— 指针</strong>，间接地访问。后者自然要加上**指针运算符（解引用）<code>*</code>**。</p>
+<h5 id="指针的使用"><a href="#指针的使用" class="headerlink" title="指针的使用"></a>指针的使用</h5><p>有了指针，在我们的程序里，要访问一个变量就有两种方法了。一方面，可以通过<strong>抽屉的标签</strong>，也就是<strong>变量名</strong>访问；另一方面，可以通过<strong>抽屉的编号 —— 指针</strong>，间接地访问。后者自然要加上**指针运算符（解引用）<code>*</code>**。</p>
 <p>显然，在多数情况下，偏要用指针间接访问一个变量是毫无意义的。但在某些情况下，我们只能通过指针访问。考察下面的程序</p>
 <div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">void</span> <span class="title function_">pass_by_value</span><span class="params">(<span class="type">int</span> i)</span></span><br><span class="line">&#123;</span><br><span class="line">    i = <span class="number">10</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">pass_by_pointer</span><span class="params">(<span class="type">int</span> *p)</span></span><br><span class="line">&#123;</span><br><span class="line">    *p = <span class="number">10</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> x = <span class="number">0</span>, y = <span class="number">0</span>;</span><br><span class="line">    pass_by_value(x);</span><br><span class="line">    pass_by_pointer(&amp;y);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;x = %d, y = %d\n&quot;</span>, x, y);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 
@@ -156,7 +156,7 @@
                       alt="截屏2023-02-24 16.56.33" style="zoom:35%;" 
                 >
 
-<h4 id="2-1-2-数组"><a href="#2-1-2-数组" class="headerlink" title="2.1.2 数组"></a>2.1.2 数组</h4><blockquote>
+<h4 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h4><blockquote>
 <p>为了绘图简便，我们考察<code>short</code>型的数组。一个<code>short</code>变量占两个抽屉。此处我们仅考虑数组和指针的关系，数组的定义、初始化、元素访问等不再赘述。</p>
 </blockquote>
 <p>我们会说，<strong>数组名就是指针</strong>，这句话的意思是</p>
@@ -183,7 +183,7 @@
 <li>前面说到，函数参数需要借一些抽屉临时存放。而函数能借到的抽屉是<strong>有限的</strong>，如果真的把一个长度为 999 的数组传入，则需要 999 × 4 个抽屉，这不太现实。只传入指针，则只需要 4 个抽屉即可 —— 通过指针间接访问数组。</li>
 <li>此外，上一点也提醒我们，<strong>函数内部并不知道数组有多大，它只知道数组的首地址</strong>。所以对数组操作的函数，一般需要再加上一个<code>size</code>参数，保证函数中不会出现<strong>数组越界</strong>的情况。</li>
 </ul>
-<h4 id="2-1-3-字符串"><a href="#2-1-3-字符串" class="headerlink" title="2.1.3 字符串"></a>2.1.3 字符串</h4><p>在最开始的地方谈到，用双引号扩起来的字符串常量，被存放在大柜子的一块特定区域，即常量区。事实上，不仅是我们想要输出的文本信息，<strong>C 程序中任何地方</strong>出现的字符串常量，都会被存在那里。</p>
+<h4 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h4><p>在最开始的地方谈到，用双引号扩起来的字符串常量，被存放在大柜子的一块特定区域，即常量区。事实上，不仅是我们想要输出的文本信息，<strong>C 程序中任何地方</strong>出现的字符串常量，都会被存在那里。</p>
 <div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="code"><pre><span class="line"><span class="built_in">scanf</span>(<span class="string">&quot;%d %d&quot;</span>, &amp;a, &amp;b);</span><br><span class="line"><span class="type">char</span> *s = <span class="string">&quot;hello world&quot;</span>;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%s\n&quot;</span>, s);</span><br></pre></td></tr></table></figure></div>
 
 <p>这里的<code>&quot;%d %d&quot;</code> <code>&quot;hello world&quot;</code> <code>&quot;%s\n&quot;</code>都是字符串常量，都会被预先存在常量区。另一方面，这种字符串常量的最后都默认有一个看不见的<code>&#39;\0&#39;</code>作为结束的标志，这是系统自动加上的。</p>
@@ -217,7 +217,7 @@
                       alt="截屏2023-02-25 12.08.20" style="zoom:40%;" 
                 ></li>
 </ul>
-<h4 id="2-1-4-说在最后"><a href="#2-1-4-说在最后" class="headerlink" title="2.1.4 说在最后"></a>2.1.4 说在最后</h4><p><strong>指针是工具，是用来使用的。</strong></p>
+<h4 id="说在最后"><a href="#说在最后" class="headerlink" title="说在最后"></a>说在最后</h4><p><strong>指针是工具，是用来使用的。</strong></p>
 <p>对指针的本质进行解析，为的是让大家理解其使用方式。使用指针，需要的是在脑海中形成意识“我们就是这么做的”“这么做是合理的”。对于指针的基本理解包括但不限于以下几点</p>
 <ul>
 <li>指针是个<strong>变量</strong>，指针是个<strong>整数</strong>。</li>
@@ -232,7 +232,7 @@
 <div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">char</span> *s  = <span class="string">&quot;abc&quot;</span>; <span class="comment">// 这是指针指向字符串常量</span></span><br><span class="line"><span class="type">char</span> t[] = <span class="string">&quot;abc&quot;</span>; <span class="comment">// 这是一个普通数组，并使用了便捷方式初始化</span></span><br><span class="line">s[<span class="number">1</span>] = <span class="string">&#x27;x&#x27;</span>;       <span class="comment">// 字符串常量不能修改！</span></span><br><span class="line">t[<span class="number">1</span>] = <span class="string">&#x27;y&#x27;</span>;       <span class="comment">// 数组当然可以修改</span></span><br></pre></td></tr></table></figure></div>
 
 <p>最后补充的是<code>NULL</code>和<code>const</code>指针。</p>
-<h5 id="1-NULL"><a href="#1-NULL" class="headerlink" title="1. NULL"></a>1. <code>NULL</code></h5><p>指针是一个<strong>整型变量</strong>，它的取值无非有这么几种</p>
+<h5 id="NULL"><a href="#NULL" class="headerlink" title="NULL"></a><code>NULL</code></h5><p>指针是一个<strong>整型变量</strong>，它的取值无非有这么几种</p>
 <ul>
 <li>只定义但未初始化，是一个随机值。</li>
 <li>进行初始化或赋值，“指向了其他的变量”。</li>
@@ -240,7 +240,7 @@
 </ul>
 <p><code>NULL</code>是一个宏，代表整数 0，用于指针的初始化：<code>int *p = NULL;</code> 当然也可以写 <code>int *p = 0;</code>。</p>
 <p>当一个指针未初始化时，它可能指向任何地方，但是那里究竟能不能访问是未知的，这就是<strong>野指针</strong>。在有些情况下，访问了不该访问的地方，可能导致系统崩溃。人们规定，<strong>编号为 0 的那个抽屉是一个无效的抽屉，一旦访问，程序运行就强制结束了</strong>（总比系统崩溃好）。所以在将指针指向某个变量之前，初始化为 0 或<code>NULL</code>，是有必要的。</p>
-<h5 id="2-const指针"><a href="#2-const指针" class="headerlink" title="2. const指针"></a>2. <code>const</code>指针</h5><p>我们知道字符串常量存在常量区，但其他常量，如<code>const int</code>，还是和普通变量放在一起的。</p>
+<h5 id="const指针"><a href="#const指针" class="headerlink" title="const指针"></a><code>const</code>指针</h5><p>我们知道字符串常量存在常量区，但其他常量，如<code>const int</code>，还是和普通变量放在一起的。</p>
 <div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> a = <span class="number">10</span>;</span><br><span class="line">a = <span class="number">100</span>;</span><br></pre></td></tr></table></figure></div>
 
 <p>当编译器看到这两行代码，它会说：“<code>a</code>被定义为常量，你却要为<code>a</code>赋其他值，不可以！”于是报错。</p>
@@ -252,7 +252,7 @@
 <div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> a = <span class="number">10</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> *p = &amp;a; <span class="comment">// 这是正确的，定义了指向常量的指针</span></span><br><span class="line">*p = <span class="number">100</span>;          <span class="comment">// 通过 p 无法修改 a</span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> b = <span class="number">10</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> *q = &amp;b; <span class="comment">// 指向常量的指针指向了普通变量</span></span><br><span class="line"><span class="type">int</span> *r = &amp;b;       <span class="comment">// 普通的指针指向了普通变量</span></span><br><span class="line">*q = <span class="number">100</span>;          <span class="comment">// 无法通过 q 修改 b 了，哪怕 b 是一个普通变量</span></span><br><span class="line">*r = <span class="number">100</span>;          <span class="comment">// 这么改当然可以</span></span><br></pre></td></tr></table></figure></div>
 
 <p>于是我们会在大量字符串处理函数的原型中，看到参数都定义为<code>const char *p</code>类型，这就是说，字符串通过<code>p</code>传入函数，<strong>保证在函数内部，不会修改字符串的内容</strong>。这么做是严谨的。</p>
-<h3 id="2-2-字符串"><a href="#2-2-字符串" class="headerlink" title="2.2 字符串"></a>2.2 字符串</h3><h4 id="2-2-1-库函数功能介绍"><a href="#2-2-1-库函数功能介绍" class="headerlink" title="2.2.1 库函数功能介绍"></a>2.2.1 库函数功能介绍</h4><p><code>size_t</code> 为无符号整数类型，它是 <strong><code>sizeof</code></strong> 关键字的结果。</p>
+<h3 id="字符串-1"><a href="#字符串-1" class="headerlink" title="字符串"></a>字符串</h3><h4 id="库函数功能介绍"><a href="#库函数功能介绍" class="headerlink" title="库函数功能介绍"></a>库函数功能介绍</h4><p><code>size_t</code> 为无符号整数类型，它是 <strong><code>sizeof</code></strong> 关键字的结果。</p>
 <p>下列常用字符串处理函数均定义在头文件  <code>&lt;string.h&gt;</code> 中：</p>
 <div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> *<span class="title function_">memchr</span><span class="params">(<span class="type">const</span> <span class="type">void</span> *str, <span class="type">int</span> c, <span class="type">size_t</span> n)</span>;</span><br><span class="line"><span class="comment">// 在参数 str 所指向的字符串的前 n 个字节中搜索第一次出现字符 c（一个无符号字符）的位置。</span></span><br></pre></td></tr></table></figure></div>
 
@@ -285,7 +285,7 @@
 <p><strong>样例输出</strong></p>
 <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">abc123</span><br><span class="line">BUAA perfectddd 123 Good</span><br><span class="line">godperfectgodgoooood goo? gooD perfect!</span><br></pre></td></tr></table></figure></div>
 </blockquote>
-<h4 id="2-2-2-读取字符串"><a href="#2-2-2-读取字符串" class="headerlink" title="2.2.2 读取字符串"></a>2.2.2 读取字符串</h4><p>很多同学在使用 <code>gets()</code> 函数读取字符串时，可能在 judge 平台的编译器上收到这样的提示:</p>
+<h4 id="读取字符串"><a href="#读取字符串" class="headerlink" title="读取字符串"></a>读取字符串</h4><p>很多同学在使用 <code>gets()</code> 函数读取字符串时，可能在 judge 平台的编译器上收到这样的提示:</p>
 <p><strong>Warning: the ‘gets’ function is dangerous and should not be used.</strong></p>
 <p>原因在于：**<code>gets()</code>函数不做地址越界检查！**若输入的字符串大于既定数组的长度，程序运行会出现难以预期的错误。<a class="link"   href="https://blog.csdn.net/weixin_33748818/article/details/89776085" >有兴趣的同学可以从这篇文章中作详细了解 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>。</p>
 <p>在此，我们建议使用如下两种方式读取字符串:</p>
@@ -303,7 +303,7 @@
 <p><strong>注意</strong></p>
 <p><code>fgets()</code> 函数会读取 <code>&#39;\n&#39;</code> 并写进数组中, 因此使用<code>strlen()</code> 函数求取数组长度时, 得到的长度比实际可见字符数多 1，其中包含了最后一个换行符。</p>
 </blockquote>
-<h3 id="2-3-char与int的转换"><a href="#2-3-char与int的转换" class="headerlink" title="2.3 char与int的转换"></a>2.3 <code>char</code>与<code>int</code>的转换</h3><p>先来看第一次作业填空题第四题:</p>
+<h3 id="char与int的转换"><a href="#char与int的转换" class="headerlink" title="char与int的转换"></a><code>char</code>与<code>int</code>的转换</h3><p>先来看第一次作业填空题第四题:</p>
 <div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">invert</span><span class="params">(<span class="type">char</span> str[])</span> &#123;</span><br><span class="line">	<span class="type">int</span> i, j, k;</span><br><span class="line">	<span class="keyword">for</span> (i=<span class="number">0</span>, j = <span class="built_in">strlen</span>(str)<span class="number">-1</span>; i &lt; j; i++, j--) &#123;</span><br><span class="line">		k = str[i];</span><br><span class="line">		str[i] = str[j];</span><br><span class="line">		str[j] = k;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 
 <p>不少同学都来提问: <code>k</code>不是<code>int</code>类型的变量吗，怎么能够和一个字符进行相应的运算关系？</p>
@@ -316,7 +316,7 @@
 <div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">exchange</span><span class="params">(<span class="type">char</span> str[])</span>&#123;</span><br><span class="line">	<span class="type">int</span> i;</span><br><span class="line">	<span class="keyword">for</span>(i = <span class="number">0</span>; str[i] != <span class="string">&#x27;\0&#x27;</span>; i++) &#123;</span><br><span class="line">		<span class="keyword">if</span>(str[i] &gt;= <span class="string">&#x27;A&#x27;</span> &amp;&amp; str[i] &lt;= <span class="string">&#x27;Z&#x27;</span>) &#123;</span><br><span class="line"> 			str[i] += <span class="number">32</span>; </span><br><span class="line">        &#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 
 <p>这段代码可以实现把一段字符串中的大写字母全部转化为小写字母，其中倒数第三行就是字符与整型量的运算。</p>
-<h2 id="三、第一次作业补充练习"><a href="#三、第一次作业补充练习" class="headerlink" title="三、第一次作业补充练习"></a>三、第一次作业补充练习</h2><p><a class="link"   href="https://www.luogu.com.cn/training/48079" >此链接 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>可以收藏起来，若有需求可以去做一些练习。</p>
+<h2 id="第一次作业补充练习"><a href="#第一次作业补充练习" class="headerlink" title="第一次作业补充练习"></a>第一次作业补充练习</h2><p><a class="link"   href="https://www.luogu.com.cn/training/48079" >此链接 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>可以收藏起来，若有需求可以去做一些练习。</p>
 <p>1、 <a class="link"   href="https://www.luogu.com.cn/problem/P5734" >处理字符串，主要考察大家对常用字符串处理库函数的运用。 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <p>2、 <a class="link"   href="https://www.luogu.com.cn/problem/P1308" >单词统计，注意题干要求处理大小写字母。 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <p>3、 <a class="link"   href="https://www.luogu.com.cn/problem/P1022" >改良计算器，为第一次上机第二道编程的拓展。 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
