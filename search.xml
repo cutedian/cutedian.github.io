@@ -2607,4 +2607,163 @@
         <tag>C</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Pr 转场预设的使用</title>
+    <url>/2023/07/15/Pr-%E8%BD%AC%E5%9C%BA%E9%A2%84%E8%AE%BE%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<blockquote>
+<p>制作精美的Vlog类视频时，Pr 自带的效果中的视频过渡（也称为转场）显然不能满足大多数用户的需求，而制作自己想要的转场时也稍显麻烦、花费时间，此文章提供一些Diandian制作的、常用的 Pr 转场。</p>
+</blockquote>
+<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>点击下方的按钮即可下载：</p>
+<a class="button  center large" href='https://pan.baidu.com/s/140VdS2hk0wsp3wHQF2VBCQ?pwd=aanf' title='Pr 转场预设下载'><i class='fa-regular fa-share-from-square'></i> Pr 转场预设下载</a>
+
+<p>该链接为百度网盘链接，文件整体只有100多M，不是很大，无需会员加速也可在短时间内下载完成。</p>
+<p>点开链接会自动填充提取码，但以防万一还是给出：aanf </p>
+<h2 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h2><p>该预设已经打包成 Pr 工程项目，方便各位在 Pr 中直接导入使用。</p>
+<p>一、如下图所示，在 Pr 上方导航栏中，点击“文件”—“打开项目”。</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/Video clips/截屏2023-07-15 14.46.13.png"
+                      alt="截屏2023-07-15 14.46.13" style="zoom:50%;" 
+                >
+
+<p>二、找到文件夹位置，打开后，点击下图中所选的项目，点击“打开”。</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/Video clips/截屏2023-07-15 14.47.08.png"
+                      alt="截屏2023-07-15 14.47.08" style="zoom:40%;" 
+                >
+
+<p>该项目为 Pr 2022年版下保存，若在更高版本的 Pr 中使用，只需要在打开该项目后，在Pr 弹出的一个弹框中，直接点击“转换”即可。若您的 Pr 版本低于2022年版，请参照以下步骤，强行将该工程文件降版本后使用：</p>
+<p>1、先将该文件的后缀重命名为<code>.zip</code>，如下图所示，点击“使用.zip”：</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/Video clips/截屏2023-07-15 17.00.14.png"
+                      alt="截屏2023-07-15 17.00.14" style="zoom:50%;" 
+                >
+
+<p>2、将所得的<code>.zip</code>文件解压，<strong>将解压得到的文件用记事本或文本编辑打开</strong>：</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/Video clips/截屏2023-07-15 17.02.13.png"
+                      alt="截屏2023-07-15 17.02.13" style="zoom:40%;" 
+                >
+
+<p>3、在上图中，我们找到<code>Version=&quot;40&quot;</code>这一位置，参照下方代码块，根据你的 Pr 版本，更改40为其他数值：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">Pr2022 —— 40</span><br><span class="line">Pr2021 —— 39</span><br><span class="line">Pr2020 —— 38</span><br><span class="line">Pr2019 —— 37</span><br><span class="line">Pr CC 2019 —— 36</span><br><span class="line">Pr CC 2018.1 —— 35</span><br><span class="line">Pr CC 2018 —— 34</span><br><span class="line">Pr CC 2017.1 —— 33</span><br><span class="line">Pr CC 2017 —— 32</span><br><span class="line">Pr CC 2015.5 —— 31</span><br><span class="line">pr CC 2015.2 —— 30</span><br></pre></td></tr></table></figure></div>
+
+<p>4、修改完后，将此文件后缀重命名为<code>.prproj</code>，即可打开啦！</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/Video clips/截屏2023-07-15 17.10.04.png"
+                      alt="截屏2023-07-15 17.10.04" style="zoom:50%;" 
+                >
+
+<p>三、打开该项目后，即可在 Pr 的素材箱中看到所有项目文件包：</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/Video clips/截屏2023-07-15 17.15.02.png"
+                      alt="截屏2023-07-15 17.15.02" style="zoom:30%;" 
+                >
+
+<p>四、我们随便点击一个项目包，例如点击<code>01.Motions</code>，即可出现下图所示画面：</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/Video clips/截屏2023-07-15 17.16.15.png"
+                      alt="截屏2023-07-15 17.16.15" style="zoom:30%;" 
+                >
+
+<p>在该图中，V1轨道为实例视频或图片（请不要删除），你可以在该项目中直接预览转场效果。当你想要把此转场效果应用到自己的视频时，请将V2与V3轨道整体复制到你自己的项目中，如下图所示：</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/Video clips/截屏2023-07-15 14.55.10.png"
+                      alt="截屏2023-07-15 14.55.10" style="zoom:40%;" 
+                >
+
+<p>请注意，两个特效块的交界处一定与你原项目中需要转场的两个视频块的交界处对齐。如果某个转场有不止V2与V3两个轨道，那么有多少个轨道，就请复制多少个轨道。</p>
+<blockquote>
+<p>至此，您已将该转场预设成功应用到您的项目中。有些转场比较复杂，如果您是Windows系统，请谨慎使用，这些转场（当然，不多）需要您开启<code>GPU渲染</code>，很多Windows系统电脑在开启该类渲染后会出现莫名其妙的错误，暂不清楚是<code>GPU渲染</code>自身的问题还是破解版软件的问题😭</p>
+</blockquote>
+<p><strong>接下来，请开启愉快的视频剪辑之旅吧😋</strong></p>
+]]></content>
+      <categories>
+        <category>Video clips</category>
+      </categories>
+      <tags>
+        <tag>Pr</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常用图像与影视处理软件安装</title>
+    <url>/2023/07/15/%E5%B8%B8%E7%94%A8%E5%9B%BE%E5%83%8F%E4%B8%8E%E5%BD%B1%E8%A7%86%E5%A4%84%E7%90%86%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<blockquote>
+<p>随着自媒体时代兴起，视频剪辑与图像处理或成为每一个乐于在社交媒体上分享自身经历与感受的人的必备技能。本文将从适用领域、上手难易程度等角度介绍若干常用的图像与影视处理软件。</p>
+</blockquote>
+<h2 id="Adobe-全家桶"><a href="#Adobe-全家桶" class="headerlink" title="Adobe 全家桶"></a>Adobe 全家桶</h2><p>Adobe 旗下的各类型软件几乎是霸占了软件工具领域的一席之地，只要从事多媒体设计相关工作的人员，基本都会用到 Adobe 软件。</p>
+<p>对于大多数用户来说，最出名的便是<code>Photoshop</code>，但其再强大，也无法胜任多媒体设计领域的全部工作，于是便有了<code>Adobe 全家桶</code>的诞生。本文主要介绍全家桶中的5款软件。</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/Video clips/截屏2023-07-15 15.16.54.png"
+                      alt="截屏2023-07-15 15.16.54" style="zoom:40%;" 
+                >
+
+<p>当然，请允许Diandian在介绍软件之前，面向广大访客们给出Adobe 全家桶2022年款的下载方式：</p>
+<div class="tabs" id="tab-first-unique-name"><ul class="nav-tabs"><li class="tab active"><a class="#first-unique-name-1">Win版</a></li><li class="tab"><a class="#first-unique-name-2">Mac版</a></li></ul><div class="tab-content"><div class="tab-pane active" id="first-unique-name-1"><p><strong><a class="link"   href="https://pan.baidu.com/s/120R2kkdxi2EhtDjDManPOg?pwd=zxnt" >https://pan.baidu.com/s/120R2kkdxi2EhtDjDManPOg?pwd=zxnt <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>   提取码：zxnt</strong></p></div><div class="tab-pane" id="first-unique-name-2"><p><strong><a class="link"   href="https://pan.baidu.com/s/1N3lD-EeuQHDn2D1UHX7APw?pwd=n8jt" >https://pan.baidu.com/s/1N3lD-EeuQHDn2D1UHX7APw?pwd=n8jt <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>   提取码：n8jt</strong></p></div></div></div>
+
+<p>上述两个版本下的链接均为百度网盘链接，需要的uu们若自身没有百度网盘<code>SVIP</code>，可以联系我，我将视情况把百度网盘账号借给你下载使用。另外，每个链接打开后是一个Adobe 全家桶软件包，您不需要全部下载到本地，只需要选择自己需要的软件下载即可😋</p>
+<p>当然，如果您执迷于正版软件，请访问Adobe 官网，至于价格嘛……</p>
+<a class="button  center large" href='https://www.adobe.com/' title='Adobe官网指路'><i class='fa-regular fa-face-smile-hearts'></i> Adobe官网指路</a>
+
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/Video clips/截屏2023-07-15 15.52.15.png"
+                      alt="截屏2023-07-15 15.52.15" style="zoom:30%;" 
+                >
+
+<h3 id="Photoshop"><a href="#Photoshop" class="headerlink" title="Photoshop"></a>Photoshop</h3><p>Photoshop（简称Ps）主要用于图像编辑工作，是目前图像编辑功能最强大的专业工具软件之一，主要功能为图像处理和绘图功能，主要用于平面设计、图片修复、艺术文字、后期修饰、视觉创意与图标制作UI设计等领域。</p>
+<p>上手难易：较简单，几乎完全掌握该软件的使用并能自主独立处理图像可能需要1-3周学习时间。</p>
+<h3 id="Adobe-Illustrator"><a href="#Adobe-Illustrator" class="headerlink" title="Adobe Illustrator"></a>Adobe Illustrator</h3><p>Adobe Illustrator（简称Ai）也用于图像编辑工作，其与 Ps 不同的是，Ps 主要以像素型数字图像编辑为主，而 Ai 是以矢量图像编辑为主，例如印刷出版、图形插画、logo等，该博客的站点logo即使用 Ai 设计。</p>
+<p>Ps 处理出的图片，一经放大就会有不同程度上的模糊，这个模糊程度取决于图片本身的“基础”。而 Ai 设计出的矢量图像的好处就是，图像大小不再受限于分辨率影响，可以自由放大缩小而不失真。</p>
+<p>上手难易：较简单，几乎完全掌握该软件的使用并能自主进行logo等的设计可能需要1-2周学习时间。</p>
+<h3 id="LightRoom"><a href="#LightRoom" class="headerlink" title="LightRoom"></a>LightRoom</h3><p>LightRoom（简称Lr）是一款可以快速导入图片和调色处理的软件，在摄影过程中或者后期批量处理中会主要使用此软件。Diandian个人将 Lr 软件理解为 Ps 中的<code>Camera Raw 滤镜</code>的拓展延伸。该软件很大程度上弥补了 Ps 在批量处理图片效率上的不足，是摄影师的好帮手。Diandian身边认识的大多数约拍摄影师都使用此软件。</p>
+<p>上手难易：较简单，几乎掌握该软件并能调出大师级色彩可能需要1周左右学习时间。</p>
+<h3 id="Adobe-Premiere-Pro"><a href="#Adobe-Premiere-Pro" class="headerlink" title="Adobe Premiere Pro"></a>Adobe Premiere Pro</h3><p>Adobe Premiere Pro 是 Adobe Premiere 的升级版，两者都可简称为 Pr 。</p>
+<p>该软件是最专业的非线性视频剪辑软件之一，提供了更细致更强大的视频剪辑、特效、调色、配音、字幕等常见功能，足以完成在编辑、制作等视频类工作流上遇到的所有挑战。</p>
+<p>上手难易：中等，几乎掌握该软件并能独立剪辑精美视频可能需要1-2个月学习时间。</p>
+<h3 id="Adobe-After-Effects"><a href="#Adobe-After-Effects" class="headerlink" title="Adobe After Effects"></a>Adobe After Effects</h3><p>Adobe After Effects（简称Ae）主要以动画编辑与炫酷特效制作工作为主，可以处理2D和3D图形的后期合成，一般用于影视片头制作、影视特效、网页动画、广告、动漫等，对电脑配置要求较高。</p>
+<p>我们平时看到的很多宣传片，片头片尾是通过 Ae 合成的，中间视频内容是通过 Pr 剪辑的。</p>
+<p>上手难易：较难，没有人能够说自己完全掌握该软件，但能独立使用并制作特效可能需要2-3个月学习时间。</p>
+<h2 id="剪映"><a href="#剪映" class="headerlink" title="剪映"></a>剪映</h2><p>剪映是一款视频剪辑工具，带有全面的剪辑功能，有多样的滤镜和美颜效果，有丰富的曲库资源，支持在手机、电脑端上使用，是现在很多短视频平台所能用到的视频制作软件。下载地址如下：</p>
+<a class="button  center large" href='https://www.capcut.cn/' title='剪映官网'><i class='fa-solid fa-video'></i> 剪映官网</a>
+
+<p>该软件主打的是随时随地创作与剪辑效率，内含许多现成模版与视频bgm，文字设计、转场等模块均可使用软件自带模版，无需像 Pr 、Ae等软件需要自己制作，缺点是自由度较低，模版是现成的，很难融入自己的创意。</p>
+<h2 id="DaVinci-Resolve"><a href="#DaVinci-Resolve" class="headerlink" title="DaVinci Resolve"></a>DaVinci Resolve</h2><p>达芬奇调色软件也是最专业的视频后期制作工具之一，它提供了丰富的色彩调整功能，可以精确调整视频的亮度、对比度、色调、饱和度等参数，以及进行色彩分级和色彩校正。其不仅包含了强大的调色功能，还集成了剪辑、特效、音频处理等多个模块，是现阶段电影、电视剧所必需使用的软件之一。下载地址如下：</p>
+<a class="button  center large" href='http://www.blackmagicdesign.com/cn/support/family/davinci-resolve-and-fusion/' title='DaVinci Resolve官网下载'><i class='fa-solid fa-paint-roller'></i> DaVinci Resolve官网下载</a>
+
+<h2 id="Arctime-Pro"><a href="#Arctime-Pro" class="headerlink" title="Arctime Pro"></a>Arctime Pro</h2><p>Arctime Pro 是一款非常好用的字幕制作软件，能够自定义拖动时间线以及调整字幕块，高效地完成字幕的创建工作，可以讲一个几百行、上几千字的文档，迅速转化成视频字幕。同时，该软件在导出字幕文件格式的选择中也能支持多种格式的输出，同时达到高品质的视频导出效果。您可以选择从Arctime直接导出带字幕的视频，也可以将该软件生成的字幕文件导入到 Pr 中，做进一步调整和后期制作。下载地址如下：</p>
+<a class="button  center large" href='https://arctime.cn/' title='Arctime Pro官网'><i class='fa-solid fa-comment-text'></i> Arctime Pro官网</a>
+
+<p>如果你的视频所需字幕类型，只是像大多数影视剧中，位于视频画面正下方的对话字幕或者解说字幕，而不需要多余特效的话，该软件是非常好的选择！</p>
+<blockquote>
+<p>目前Diandian所用到的软件搭配为：Ps + Pr + Ae + Au + Arctime Pro</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Video clips</category>
+      </categories>
+      <tags>
+        <tag>Pr</tag>
+        <tag>Ps</tag>
+        <tag>Ae</tag>
+      </tags>
+  </entry>
 </search>
