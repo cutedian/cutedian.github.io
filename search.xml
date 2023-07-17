@@ -125,6 +125,7 @@
       </categories>
       <tags>
         <tag>Typora</tag>
+        <tag>ClashX</tag>
       </tags>
   </entry>
   <entry>
@@ -2920,6 +2921,36 @@
       </categories>
       <tags>
         <tag>Lab reports</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ClashX走终端与命令行的一些问题和解决方式</title>
+    <url>/2023/07/17/ClashX%E8%B5%B0%E7%BB%88%E7%AB%AF%E4%B8%8E%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>在该博客置顶文章中，给出了一个名为<code>ClashX</code>的代理方式。</p>
+<p>在后续使用过程中，Diandian发现在 PC 端，开启<code>ClashX</code>代理后，浏览器可以顺利访问外网，但是<code>macOS</code>终端、命令行以及其他工具访问外网时，依旧非常缓慢。</p>
+<p>查阅<code>ClashX</code>使用手册发现，其所采用的<code>SS</code>、<code>SSR</code>、<code>V2ray</code>等软件工具属于代理（proxy），并不是VPN。</p>
+<p>这意味着诸如终端等并不会走上<code>ClashX</code>的代理路线。</p>
+<h2 id="解决措施"><a href="#解决措施" class="headerlink" title="解决措施"></a>解决措施</h2><p>下载<code>MacOS</code>上的<code>ClashX Pro</code>代理软件（<code>Windows</code>上貌似没有，但<code>Windows</code>上的<code>ClashX</code>貌似没有上文所描述到的问题）。</p>
+<a class="button  center large" href='https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public' title='ClashX Pro下载'><i class='fa-solid fa-download'></i> ClashX Pro下载</a>\
+
+<p><code>ClashX Pro</code>相较于<code>ClashX</code>多了增强模式、规则集和原生<code>Apple Silicon</code>支持等功能。</p>
+<p>其中，增强模式的存在意义就是为了让终端实现全局代理，只需要在下拉栏里勾选“增强模式”：</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/Video clips/截屏2023-07-17 17.39.46.png"
+                      alt="截屏2023-07-17 17.39.46" style="zoom:50%;" 
+                >
+
+<p>即可让终端等所有工具走上代理，并且是按照<code>Clash</code>中设定好的路由规则智能直连或者代理。</p>
+<p>开启增强模式后，在终端ping任何域名，都会返回一个虚假ip（fake ip）。此时无需担心，这是Clash的正常行为，目的就是为了接管系统流量。</p>
+<p><code>Windows版本</code>的<code>Clash for Windows</code>也有增强模式，叫<code>TUN</code>或者<code>TAP</code>模式。但是和<code>Mac</code>版的相比，其不仅要安装依赖包，还需自行编辑配置文件才能让<code>TUN</code>模式生效，不如<code>ClashX Pro</code>方便。关于<code>Windows版</code>如何启用<code>TUN/TAP</code>模式，可参考<a class="link"   href="https://docs.cfw.lbyczf.com/contents/tun.html#windows" >官方文档 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>。</p>
+]]></content>
+      <categories>
+        <category>Summary</category>
+      </categories>
+      <tags>
+        <tag>ClashX</tag>
       </tags>
   </entry>
 </search>
