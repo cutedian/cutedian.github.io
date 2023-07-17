@@ -88,8 +88,8 @@
 <h3 id="Search模块"><a href="#Search模块" class="headerlink" title="Search模块"></a><code>Search</code>模块</h3><p>搜索模块的实现基于<code>Hexo-generator-searchdb</code>插件，位于主页的右上角，图标为<code>🔍</code>。</p>
 <p>点击进入搜索模块后，只需要在弹出的输入框内输入您想要看到的内容关键字词，即可精确定位到文章标题、文章内容。（意即无论此关键字词出现在标题还是在内容里，都能被快速精准地搜索到）</p>
 <h3 id="文章、分类与标签"><a href="#文章、分类与标签" class="headerlink" title="文章、分类与标签"></a>文章、分类与标签</h3><h4 id="阅读文章"><a href="#阅读文章" class="headerlink" title="阅读文章"></a>阅读文章</h4><p>只需要点击文章的缩略图或者<code>Read more</code>按钮，即可阅读文章全文。</p>
-<h4 id="分类模块"><a href="#分类模块" class="headerlink" title="分类模块"></a>分类模块</h4><p>在侧边栏的两个浮块中均有<code>Categories</code>按钮，点击后即可进入分类模块。此模块将所有博客文章以分类的形式呈现，方便访客们更有目的性地浏览各文章。点击具体分类名的模块，即可浏览在该分类下的文章。</p>
-<p>如果一个分类下有多个子分类，即可点击大的分类名，所有子分类将自动展开。</p>
+<h4 id="分类模块"><a href="#分类模块" class="headerlink" title="分类模块"></a>分类模块</h4><p>在侧边栏的两个浮块中均有<code>Categories</code>按钮，点击后即可进入分类模块。此模块将所有博客文章以分类的形式呈现，方便访客们更有目的性地浏览各文章。点击具体分类名称，即可浏览在该分类下的文章。</p>
+<p>如果一个分类下有多个子分类，即可点击大的分类名模块，所有子分类将自动展开。</p>
 <h4 id="标签模块"><a href="#标签模块" class="headerlink" title="标签模块"></a>标签模块</h4><p>在侧边栏的两个浮块中均有<code>Tags</code>按钮，点击后即可进入标签模块。此模块将所有博客文章以其所阐述的重点主题为划分标准，给访客们呈现了具体的文章关键词。点击具体标签名的模块，即可查看与此标签相关的文章。</p>
 <h3 id="Archives模块"><a href="#Archives模块" class="headerlink" title="Archives模块"></a><code>Archives</code>模块</h3><p>请允许Diandian将此模块称为档案室，它按照时间顺序收录了博客内所有文章，方便访客们按照时间顺序查阅。</p>
 <p>想要访问此模块，只需点击主页右上角或侧边栏的<code>ARCHIVES</code>按钮即可。</p>
