@@ -9,7 +9,7 @@
 <p>从大一开始，Diandian便持续搜集各科目资料<strong>（包括但不限于往年考题、实验报告、课程讲义）</strong>，其不仅是为了日后自我复习，还是为了分享给往后许多届的同学们。</p>
 <p>毕竟，大学里要学会互帮互助，才能走得长远。因此，该博客内包括但不限于以下内容并将持续更新：</p>
 <div class="note-large blue"><div class="notel-title"><p>2系：电路分析</p>
-</div><div class="notel-content"><p>往年题12套</p>
+</div><div class="notel-content"><p>往年题16套</p>
 <p>自写答案</p>
 <p>学习方法</p>
 </div></div>
@@ -2901,7 +2901,8 @@
         <category>信息大类</category>
       </categories>
       <tags>
-        <tag>exams</tag>
+        <tag>mid-test</tag>
+        <tag>final-test</tag>
       </tags>
   </entry>
   <entry>
@@ -2951,6 +2952,37 @@
       </categories>
       <tags>
         <tag>ClashX</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>电路分析学习心得与往年题分享</title>
+    <url>/2023/07/18/%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97%E4%B8%8E%E5%BE%80%E5%B9%B4%E9%A2%98%E5%88%86%E4%BA%AB/</url>
+    <content><![CDATA[<h2 id="资料下载"><a href="#资料下载" class="headerlink" title="资料下载"></a>资料下载</h2><p>点击下方按钮即可直达电路分析资料下载链接哦～</p>
+<a class="button  center large" href='https://pan.baidu.com/s/1JZn1TRaIco14s6ZW3w_xzg?pwd=9mxy' title='信息类大一课程往年题下载'><i class='fa-solid fa-paper-plane'></i> 信息类大一课程往年题下载</a>
+
+<p>上述链接为百度网盘链接，文件大小为128M，提取码：9mxy</p>
+<p>该文件夹包括：</p>
+<ul>
+<li>往年期中考题4套（无答案）</li>
+<li>往年期末考题10套（含自写答案，由Diandian与2102大佬zyy核对，几乎无误）</li>
+<li>3系与41系21级电分期末考题（共2套，含自写答案，对于2系电路分析考题有一定的参考价值）</li>
+<li>刘建胜老师班级授课PPT一套</li>
+<li>教材与习题答案</li>
+</ul>
+<h2 id="学习心得"><a href="#学习心得" class="headerlink" title="学习心得"></a>学习心得</h2><p>《电路分析》可以说是2系大二上最重要的专业课，是2系很多课程的基础。</p>
+<p>因此，<strong>请尽量在上课时认真听讲</strong>。电路分析的各种定理说多不多，说少不少，定理本身理解起来并不困难，其中也包含不少的“二级定理”。另外，电路分析最重要的是各种解题思路和解题方法，这些思路和方法可能并不会在教材上呈现，但老师对于课件中的例题讲解是一定会涉及到的。如果上课做其他事，错过了一些重要的解题思路和方法，可能会导致期中与期末复习时非常难受😭</p>
+<p>关于作业：电路分析的作业难度偏难，有些题目的计算量偏大，请尽量不要堆在交作业的前一天晚上熬夜赶。刚学完新知识时，有些作业题目可能乍一看没有解题思路，不要惊慌，可以放心大胆地查看参考答案，只要不是盲目地抄答案，看一遍答案再自己做也是很有效的学习方式。</p>
+<p>如果平时上课和完成作业比较摆的话，想要在考试前突击复习，请先抛开教材与上课所讲内容，直接开始做往年题，此法叫做<strong>“面向往年题复习”</strong>。2系的很多专业课都可以通过这种方式取得高分（因为往年题足够全面且系统化），但并不推荐，因为这样的应试方式本质上学不到什么真东西。</p>
+<p>最后说一点，关于作业与考试题目：如果没有强制要求用什么方法解题，请记住<code>KCL</code>和<code>KVL</code>定理一定是解所有题目的最本质定理与最核心思路，很多题目直接列节点方程比使用戴维南等效等进阶方法快很多。</p>
+]]></content>
+      <categories>
+        <category>Courses</category>
+        <category>电路分析</category>
+      </categories>
+      <tags>
+        <tag>mid-test</tag>
+        <tag>final-test</tag>
+        <tag>Learning notes</tag>
       </tags>
   </entry>
 </search>
