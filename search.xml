@@ -3048,4 +3048,42 @@
         <tag>final-test</tag>
       </tags>
   </entry>
+  <entry>
+    <title>电子电路（1）</title>
+    <url>/2023/07/19/%E7%94%B5%E5%AD%90%E7%94%B5%E8%B7%AF%EF%BC%881%EF%BC%89/</url>
+    <content><![CDATA[<h2 id="必看内容"><a href="#必看内容" class="headerlink" title="必看内容"></a>必看内容</h2><ul>
+<li><strong>zxl的教材真的很一言难尽，建议大家非必要不查阅！！！</strong></li>
+<li>zxl的模拟试题在实验书最后，<strong>期中考试题几乎和模拟试题1一模一样！！！期末考试题通常是一道期中考试题加上模拟试题2（最后一题没怎么考过）！！！</strong>并且<strong>zxl给出的模拟试题答案很多都是错的，大家可以参考Diandian给出的订正过后的答案！</strong></li>
+<li>复习考试之前一定先过一遍老师的课件内容，<strong>但一定不要看zxl的教材，zxl教材非必要不查阅！！！</strong></li>
+<li>下文所给的期中期末复习题，<strong>考前必做！！！</strong></li>
+<li>上课讲的节奏非常快，听不懂很正常，<del>这课没多少人能听懂。</del>但请一定要理解并掌握最基础的器件特性、等效电路和分析方法，或者也可以通过做题（期中期末复习题）来掌握，本质原理还是电路分析所学的知识。</li>
+</ul>
+<h2 id="资料下载"><a href="#资料下载" class="headerlink" title="资料下载"></a>资料下载</h2><p>点击下方按钮即可直达电子电路（1）资料下载链接哦～</p>
+<a class="button  center large" href='https://pan.baidu.com/s/1kUgop4vCuE1a26DmOOKtmA?pwd=iifb' title='电子电路（1）资料下载'><i class='fa-solid fa-paper-plane'></i> 电子电路（1）资料下载</a>
+
+<p>上述链接为百度网盘链接，文件大小为128M，提取码：iifb</p>
+<p>该文件夹包括：</p>
+<ul>
+<li>期中题库（即zxl模拟一，包含zyy和Diandian订正过的答案）</li>
+<li>期末题库（根据zxl模拟二和往年题整理，含自写答案，经Diandian与zyy、mjh核对无误）</li>
+<li>赵琦老师班级全套课件</li>
+<li>模电仿真与硬件实验报告（各四份，共八份）</li>
+</ul>
+<h2 id="关于实验"><a href="#关于实验" class="headerlink" title="关于实验"></a>关于实验</h2><p>北航模电实验为祖传实验，可以放心大胆借鉴往届的实验报告，Diandian给出的实验报告包含了所有实验的选做项，敬请查阅😋</p>
+<p>关于仿真软件<code>multisim</code>的使用，课程助教会在课堂上讲解，大家不用另外去学。这里给出一个该软件最新版（Multisim 14.3）的安装链接（<code>macOS</code>系统无论如何都无法使用该软件，Diandian已经试过了）：</p>
+<a class="button  center large" href='https://pan.baidu.com/s/1cjo5L2rAlUcvJQhD1AGp3A?pwd=cij5' title='Multisim 14.3 安装'><i class='fa-solid fa-paper-plane'></i> Multisim 14.3 安装</a>
+
+<p>上述链接为百度网盘链接，文件大小为876M，提取码：cij5</p>
+<p>文件里已包含安装教程pdf文件，参考安装教程一步步安装即可。</p>
+<p><strong>如果想要仿真实验的工程文件，请私信Diandian哦～</strong></p>
+]]></content>
+      <categories>
+        <category>Courses</category>
+        <category>电子电路（1）</category>
+      </categories>
+      <tags>
+        <tag>mid-test</tag>
+        <tag>final-test</tag>
+      </tags>
+  </entry>
 </search>
