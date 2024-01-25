@@ -3341,4 +3341,57 @@
         <tag>Lab reports</tag>
       </tags>
   </entry>
+  <entry>
+    <title>数字信号处理</title>
+    <url>/2024/01/25/%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/</url>
+    <content><![CDATA[<h2 id="资料下载"><a href="#资料下载" class="headerlink" title="资料下载"></a>资料下载</h2><p>点击下方按钮即可直达数字信号处理资料下载链接哦～</p>
+<a class="button  center large" href='https://pan.baidu.com/s/1TkmpcSVSjXbHDEU55MCHUw?pwd=fpig' title='数字信号处理资料下载'><i class='fa-solid fa-paper-plane'></i> 数字信号处理资料下载</a>
+
+<p>上述链接为百度网盘链接，文件大小为256M，提取码：fpig</p>
+<p>该文件夹包括：</p>
+<ul>
+<li>王俊老师班级全套课件</li>
+<li>上课教材电子版</li>
+<li>DSP实验报告以及所有实验的Matlab代码</li>
+<li>往年期末考题7套（含自写答案，供参考）</li>
+</ul>
+<h2 id="一些说明"><a href="#一些说明" class="headerlink" title="一些说明"></a>一些说明</h2><ul>
+<li>这门课程可以视作《信号与系统》的延伸课程，只不过《信号与系统》着重考察连续时间系统，而《数字信号处理》着重研究离散系统。值得一提的是，可能大多数同学掌握的很好的<code>Laplace变换</code>并不能用于对于离散信号与离散系统的分析。因此，除了<code>z变换</code>之外，自然还需要引入非常多的其他时频域变换方法，如<code>DTFT</code>（离散时间傅立叶变换）、<code>DFS</code>（离散傅立叶级数）、<code>DFT</code>（离散傅立叶变换）、<code>FFT</code>（快速傅立叶变换）等。所以请《信号与系统》学得好的同学也一定不要轻视这门课的日常学习；</li>
+<li>这门课难度主要在处理方法的理解和应用上，请一定不要忽视课后作业题的联系；</li>
+<li>关于实验：该课程实验也为祖传实验，实验报告与<code>Matlab</code>代码已悉数为您奉上。（注意，该课程的实验需要使用Matlab平台编辑代码，因此请学有余力的同学自学<code>Matlab</code>语言，当然，不想学也没关系，可以直接用Diandian的代码，因为实验报告不要求提交源代码。）</li>
+</ul>
+<h2 id="Matlab安装"><a href="#Matlab安装" class="headerlink" title="Matlab安装"></a>Matlab安装</h2><p>下文提供了<code>Matlab</code>的安装教程与安装包，Win&#x2F;Mac系统均有：</p>
+<div class="tabs" id="tab-first-unique-name"><ul class="nav-tabs"><li class="tab active"><a class="#first-unique-name-1">Win：R2022b版</a></li><li class="tab"><a class="#first-unique-name-2">Mac：R2021b版</a></li></ul><div class="tab-content"><div class="tab-pane active" id="first-unique-name-1"><p><strong><a class="link"   href="https://pan.baidu.com/s/1tQVolUBdEKbNMul9MAF13g?pwd=53m4" >https://pan.baidu.com/s/1tQVolUBdEKbNMul9MAF13g?pwd=53m4 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 提取码: 53m4</strong></p></div><div class="tab-pane" id="first-unique-name-2"><p><strong><a class="link"   href="https://pan.baidu.com/s/1rf6B59JlB8Z4AaVCMtoJUw?pwd=ftpj" >https://pan.baidu.com/s/1rf6B59JlB8Z4AaVCMtoJUw?pwd=ftpj <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 提取码: ftpj</strong></p></div></div></div>
+
+<p>安装教程已涵盖在了云盘链接中。</p>
+<p><code>Matlab</code>非常大！请确保你的电脑有足够的空间，当然也可以借Diandian的百度网盘<code>SVIP</code>下载。</p>
+<p>当然，如果您不想在您的电脑上安装<code>Matlab</code>软件，也可以使用<code>Matlab</code>官网的<code>Matlab Online</code>工具：</p>
+<a class="button  center large" href='https://ww2.mathworks.cn/products/matlab-online.html' title='Matlab Online官网指路'><i class='fa-solid fa-location-dot'></i> Matlab Online官网指路</a>
+]]></content>
+      <categories>
+        <category>Courses</category>
+        <category>数字信号处理</category>
+      </categories>
+      <tags>
+        <tag>final-test</tag>
+        <tag>Lab reports</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>通信基础实验</title>
+    <url>/2024/01/25/%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80%E5%AE%9E%E9%AA%8C/</url>
+    <content><![CDATA[<p>这门课程为2021级新开设的课程，Diandian自己也没学明白，但是好歹实验报告做出来了……蒽。</p>
+<h2 id="资料下载"><a href="#资料下载" class="headerlink" title="资料下载"></a>资料下载</h2><p>点击下方按钮即可直达通信基础实验的实验报告哦～</p>
+<a class="button  center large" href='https://pan.baidu.com/s/1QbWFoT0FFeSyhEGZgCBc5Q?pwd=42cm' title='通信基础实验实验报告下载'><i class='fa-solid fa-paper-plane'></i> 通信基础实验实验报告下载</a>
+
+<p>上述链接为百度网盘链接，文件大小为403M，提取码为：42cm</p>
+]]></content>
+      <categories>
+        <category>Courses</category>
+        <category>通信基础实验</category>
+      </categories>
+      <tags>
+        <tag>Lab reports</tag>
+      </tags>
+  </entry>
 </search>
