@@ -661,10 +661,11 @@
 ]]></content>
       <categories>
         <category>Courses</category>
-        <category>概率统计与随机过程</category>
+        <category>微波技术基础</category>
       </categories>
       <tags>
         <tag>final-test</tag>
+        <tag>Lab reports</tag>
       </tags>
   </entry>
   <entry>
@@ -3277,6 +3278,67 @@
         <tag>final-test</tag>
         <tag>mid-test</tag>
         <tag>Learning notes</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数字电路系统</title>
+    <url>/2024/01/25/%E6%95%B0%E5%AD%97%E7%94%B5%E8%B7%AF%E7%B3%BB%E7%BB%9F/</url>
+    <content><![CDATA[<h2 id="必看内容"><a href="#必看内容" class="headerlink" title="必看内容"></a>必看内容</h2><p>这门课上课知识点比较庞杂，但是理解起来并不难。上课请不要仅局限于知识点的记背与理解，这门课考试<u><strong>重在考察自主设计逻辑与思路</strong></u>，对于单个知识点的考察并不多。</p>
+<p>期末总复习时，无论你有没有时间，都建议把往年题放在第一位。通过做往年题，你才知道这门课重点考察什么样的设计思路（比如设计电路逻辑、完成<code>verilog</code>代码块的设计等）。</p>
+<p>在复习资料中，仍有Diandian自己整理的该门课程知识点汇总（纯手写版），如果有更多时间的话，也建议大家过一遍。</p>
+<h2 id="资料下载"><a href="#资料下载" class="headerlink" title="资料下载"></a>资料下载</h2><p>点击下方按钮即可直达数字电路系统资料下载链接哦～</p>
+<a class="button  center large" href='https://pan.baidu.com/s/132uKA0K5cgtZKa-9yqDWkA?pwd=emkw' title='数字电路系统资料下载'><i class='fa-solid fa-paper-plane'></i> 数字电路系统资料下载</a>
+
+<p>上述链接为百度网盘链接，文件大小为379M，提取码：emkw</p>
+<p>文件较大，若需要百度网盘超级会员的话，可私聊Diandian借您使用。</p>
+<p>该文件夹包括：</p>
+<ul>
+<li>往年期末考题7套（含2套试卷自带答案和5套自写答案供参考，因为设计题答案可能不唯一）</li>
+<li>两本上课教材电子版（教材与教材辅导）</li>
+<li>实验报告+代码（包括硬件实验与软件实验）</li>
+<li>ZLX班小测一份（是的，<strong>这门课有小测且记入总评</strong>，因此给出我们当时的小测供参考）</li>
+<li>李鞘老师班全套课件</li>
+<li>数电知识点汇总（纯手写版）</li>
+</ul>
+<h2 id="关于实验"><a href="#关于实验" class="headerlink" title="关于实验"></a>关于实验</h2><p>《数字电路系统》这门课的实验，每一个年级之间不尽相同。可能有重复的实验，也有可能所有实验都会更新。</p>
+<p><strong>需要注意：</strong>该课程的实验难度较大，且需要<code>FPGA</code>相关知识。其中，在<code>CG平台</code>上提交的均为较简单的代码（不太需要设计到顶层模块之类的），而上板子的实验难度较大，考察实验综合代码编写能力，分组完成。</p>
+<p>建议不要把所有实验拖到最后再做，因为每一个实验可能都需要花费不少时间，犹记得Diandian当时熬了不少大夜，有一周连熬了三天大夜（当然，不是赶ddl，只是想做完实验），直接熬进北医三院急诊去了（蒽……在此建议大家别学Diandian）</p>
+<p>最后一个实验需要课堂现场展示，展示PPT也已经放在了课程资料中，点开就能直接看到（动画精美，展示效果很绝），各位可以直接套用。</p>
+]]></content>
+      <categories>
+        <category>Courses</category>
+        <category>数字电路系统</category>
+      </categories>
+      <tags>
+        <tag>final-test</tag>
+        <tag>Lab reports</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>电子电路（2）</title>
+    <url>/2024/01/25/%E7%94%B5%E5%AD%90%E7%94%B5%E8%B7%AF%EF%BC%882%EF%BC%89/</url>
+    <content><![CDATA[<h2 id="必看内容"><a href="#必看内容" class="headerlink" title="必看内容"></a>必看内容</h2><p>这门课与《电子电路（1）》不同，这门课的<strong>教材还是很有查阅的必要</strong>的，但是依旧不影响其作为国家精品一流课程，上的和一般通识课差不多的现状。</p>
+<p>这门课的期末考试题也有部分原题，<strong>但注意是部分！</strong>并非所有题都是原题，每年也会有新题产生。关于考察哪些原题，老师的原话是：你们看往年题哪些题一直考，就应该清楚了。</p>
+<h2 id="资料下载"><a href="#资料下载" class="headerlink" title="资料下载"></a>资料下载</h2><p>点击下方按钮即可直达电子电路（2）资料下载链接哦～</p>
+<a class="button  center large" href='https://pan.baidu.com/s/1zJhHQFokcIoTfBc-J3hDmQ?pwd=3mts' title='电子电路（2）资料下载'><i class='fa-solid fa-paper-plane'></i> 电子电路（2）资料下载</a>
+
+<p>上述链接为百度网盘链接，文件大小为192M，提取码：3mts</p>
+<p>该文件夹包括：</p>
+<ul>
+<li>实验报告（包括所有硬件实验与仿真实验）</li>
+<li>上课课件一套</li>
+<li>电子版教材以及课后习题答案</li>
+<li>期末考题与复习资料（必看！里面包含了知识点汇总、往年试题以及20级自写答案一份供参考）</li>
+</ul>
+<h2 id="关于实验"><a href="#关于实验" class="headerlink" title="关于实验"></a>关于实验</h2><p>老生常谈，祖传实验。实验报告与工程文件见学习资料即可～</p>
+]]></content>
+      <categories>
+        <category>Courses</category>
+        <category>电子电路（2）</category>
+      </categories>
+      <tags>
+        <tag>final-test</tag>
+        <tag>Lab reports</tag>
       </tags>
   </entry>
 </search>
