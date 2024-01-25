@@ -42,17 +42,168 @@
         
         Diandian Honey Pot
     </title>
+
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/fonts/Chillax/chillax.css">
+
+    
+        <style>
+    :root {
+        --preloader-background-color: #fff;
+        --preloader-text-color: #000;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --preloader-background-color: #202124;
+            --preloader-text-color: #fff;
+        }
+    }
+
+    @media (prefers-color-scheme: light) {
+        :root {
+            --preloader-background-color: #fff;
+            --preloader-text-color: #000;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .ml13 {
+            font-size: 2.6rem !important; /* Adjust this value as needed */
+        }
+    }
+
+    .preloader {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem; /* Tailwind 'gap-4' is 1rem */
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        padding: 12px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh; /* 'h-screen' is 100% of the viewport height */
+        background-color: var(--preloader-background-color);
+        z-index: 1100; /* 'z-[1100]' sets the z-index */
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    .ml13 {
+        font-size: 3.2rem;
+        /* text-transform: uppercase; */
+        color: var(--preloader-text-color);
+        letter-spacing: -1px;
+        font-weight: 500;
+        font-family: 'Chillax-Variable', sans-serif;
+        text-align: center;
+    }
+
+    .ml13 .word {
+        display: inline-flex;
+        flex-wrap: wrap;
+        white-space: nowrap;
+    }
+
+    .ml13 .letter {
+        display: inline-block;
+        line-height: 1em;
+    }
+</style>
+
+<div class="preloader">
+    <script src="https://evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/js/libs/anime.min.js"></script>
+    <h1 class="ml13">
+        Diandian Honey Pot
+    </h1>
+    <script>
+        var textWrapper = document.querySelector('.ml13');
+        // Split text into words
+        var words = textWrapper.textContent.trim().split(' ');
+
+        // Clear the existing content
+        textWrapper.innerHTML = '';
+
+        // Wrap each word and its letters in spans
+        words.forEach(function(word) {
+            var wordSpan = document.createElement('span');
+            wordSpan.classList.add('word');
+            wordSpan.innerHTML = word.replace(/\S/g, "<span class='letter'>$&</span>");
+            textWrapper.appendChild(wordSpan);
+            textWrapper.appendChild(document.createTextNode(' ')); // Add space between words
+        });
+
+
+        anime.timeline({loop: true})
+            .add({
+                targets: '.ml13 .letter',
+                translateY: [100,0],
+                translateZ: 0,
+                opacity: [0,1],
+                easing: "easeOutExpo",
+                duration: 1400,
+                delay: (el, i) => 300 + 30 * i
+            }).add({
+            targets: '.ml13 .letter',
+            translateY: [0,-100],
+            opacity: [1,0],
+            easing: "easeInExpo",
+            duration: 1200,
+            delay: (el, i) => 100 + 30 * i
+        });
+
+        let themeStatus = JSON.parse(localStorage.getItem('REDEFINE-THEME-STATUS'))?.isDark;
+
+        // If the theme status is not found in local storage, check the preferred color scheme
+        if (themeStatus === undefined || themeStatus === null) {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                themeStatus = 'dark';
+            } else {
+                themeStatus = 'light';
+            }
+        }
+
+        // Now you can use the themeStatus variable in your code
+        if (themeStatus) {
+            document.documentElement.style.setProperty('--preloader-background-color', '#202124');
+            document.documentElement.style.setProperty('--preloader-text-color', '#fff');
+        } else {
+            document.documentElement.style.setProperty('--preloader-background-color', '#fff');
+            document.documentElement.style.setProperty('--preloader-text-color', '#000');
+        }
+
+        window.addEventListener('load', function () {
+            hidePreloaderAfterTimeout(1000); // Hide after 1000 milliseconds once the window has loaded
+        });
+
+        // Backup failsafe: Hide preloader after a maximum of 5000 milliseconds, regardless of the window load event
+        hidePreloaderAfterTimeout(5000);
+
+        function hidePreloaderAfterTimeout(delay) {
+            setTimeout(function () {
+                var preloader = document.querySelector('.preloader');
+                preloader.style.opacity = '0';
+                setTimeout(function () {
+                    preloader.style.display = 'none';
+                }, 200);
+            }, delay);
+        }
+    </script>
+</div>
+    
+
     
 <link rel="stylesheet" href="/css/style.css">
 
 
     
-        <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/assets/build/styles.css">
+        <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/assets/build/styles.css">
     
 
-    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/fonts/fonts.css">
-    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/fonts/Satoshi/satoshi.css">
-    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/fonts/Chillax/chillax.css">
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/fonts/fonts.css">
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/fonts/Satoshi/satoshi.css">
     <!--- Font Part-->
     
     
@@ -63,16 +214,16 @@
     
     <script id="hexo-configurations">
     window.config = {"hostname":"cutedian.github.io","root":"/","language":"en","path":"search.xml"};
-    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":["funny boy"]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":7,"number":true,"expand":true,"init_open":true},"copyright":true,"lazyload":true,"recommendation":{"enable":true,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"open_graph":true,"google_analytics":{"enable":false,"id":null},"busuanzi_counter":{"enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"pjax":true},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallheaven.png","dark":"/images/wallheaven.png"},"title":"Dian·Stay Curious","subtitle":{"text":["这是点点的蜜罐，进行一些学习心得、实验报告、助教资料的分享。"],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#fff"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":true,"links":{"github":null,"instagram":null,"zhihu":"https://www.zhihu.com/people/ning-gu-de-xi-gua-81","twitter":"https://twitter.com/frozenwate25915?s=21","email":"zhongyd2004@163.com"},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.5.0","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Friends":{"icon":"fa-solid fa-link","path":"/links/"},"Google":{"path":"https://www.google.com/","icon":"fa-brands fa-google"},"Archives":{"path":"/archives/","icon":"fa-regular fa-archive"}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":"Stay curious, stay interesting.","links":{"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Tags":{"path":"/tags","icon":"fa-regular fa-tags"},"Categories":{"path":"/categories","icon":"fa-regular fa-folder"}}},"article_date_format":"YYYY-MM-DD","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":4}},"footerStart":"2023/7/13 11:45:14"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left"},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":["funny boy"]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":7,"number":true,"expand":true,"init_open":true},"copyright":true,"lazyload":true,"recommendation":{"enable":true,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":true,"open_graph":true,"google_analytics":{"enable":false,"id":null},"busuanzi_counter":{"enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"pjax":true},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallheaven.png","dark":"/images/wallheaven.png"},"title":"Dian·Stay Curious","subtitle":{"text":["这是点点的蜜罐，进行一些学习心得、实验报告、助教资料的分享。"],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#fff"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":true,"links":{"github":null,"instagram":null,"zhihu":"https://www.zhihu.com/people/ning-gu-de-xi-gua-81","twitter":"https://twitter.com/frozenwate25915?s=21","email":"zhongyd2004@163.com"},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.6.0","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Friends":{"icon":"fa-solid fa-link","path":"/links/"},"Google":{"path":"https://www.google.com/","icon":"fa-brands fa-google"},"Archives":{"path":"/archives/","icon":"fa-regular fa-archive"}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":"Stay curious, stay interesting.","links":{"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Tags":{"path":"/tags","icon":"fa-regular fa-tags"},"Categories":{"path":"/categories","icon":"fa-regular fa-folder"}}},"article_date_format":"YYYY-MM-DD","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":4}},"footerStart":"2023/7/13 11:45:14"};
     window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
     window.data = {"masonry":false};
   </script>
     
     <!--- Fontawesome Part-->
-    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/fontawesome/fontawesome.min.css">
-    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/fontawesome/brands.min.css">
-    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/fontawesome/solid.min.css">
-    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/fontawesome/regular.min.css">
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/fontawesome/fontawesome.min.css">
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/fontawesome/brands.min.css">
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/fontawesome/solid.min.css">
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/fontawesome/regular.min.css">
     
     
     
@@ -86,9 +237,9 @@
 
     
         <span class="pjax-progress-bar"></span>
-        <span class="swup-progress-icon">
-            <i class="fa-solid fa-circle-notch fa-spin"></i>
-        </span>
+<!--        <span class="swup-progress-icon">-->
+<!--            <i class="fa-solid fa-circle-notch fa-spin"></i>-->
+<!--        </span>-->
     
 </div>
 
@@ -135,7 +286,7 @@
 
         <div class="main-content-header">
             <header class="navbar-container">
-    
+
     <div class="navbar-content">
         <div class="left">
             
@@ -152,65 +303,69 @@
                 <ul class="navbar-list">
                     
                         
+                            
+
                             <li class="navbar-item">
                                 <!-- Menu -->
-                                <a class="active" 
-                                    href="/"  >
-                                    
-                                        
-                                            <i class="fa-regular fa-house"></i>
-                                        
-                                        HOME
+                                <a class="active"
+                                   href="/"
+                                        >
+                                    <i class="fa-regular fa-house fa-fw"></i>
+                                    HOME
                                     
                                 </a>
+
                                 <!-- Submenu -->
                                 
                             </li>
                     
                         
+                            
+
                             <li class="navbar-item">
                                 <!-- Menu -->
-                                <a class="" 
-                                    href="/links/"  >
-                                    
-                                        
-                                            <i class="fa-solid fa-link"></i>
-                                        
-                                        FRIENDS
+                                <a class=""
+                                   href="/links/"
+                                        >
+                                    <i class="fa-solid fa-link fa-fw"></i>
+                                    FRIENDS
                                     
                                 </a>
+
                                 <!-- Submenu -->
                                 
                             </li>
                     
                         
+                            
+
                             <li class="navbar-item">
                                 <!-- Menu -->
-                                <a class="" 
-                                    target="_blank" rel="noopener" href="https://www.google.com/"  >
-                                    
-                                        
-                                            <i class="fa-brands fa-google"></i>
-                                        
-                                        GOOGLE
+                                <a class=""
+                                   target="_blank" rel="noopener" href="https://www.google.com/"
+                                        >
+                                    <i class="fa-brands fa-google fa-fw"></i>
+                                    GOOGLE
                                     
                                 </a>
+
                                 <!-- Submenu -->
                                 
                             </li>
                     
                         
+                            
+
                             <li class="navbar-item">
                                 <!-- Menu -->
-                                <a class="" 
-                                    href="/archives/"  >
-                                    
-                                        
-                                            <i class="fa-regular fa-archive"></i>
-                                        
-                                        ARCHIVES
+                                <a class=""
+                                   href="/archives/"
+                                        >
+                                    <i class="fa-regular fa-archive fa-fw"></i>
+                                    ARCHIVES
                                     
                                 </a>
+
                                 <!-- Submenu -->
                                 
                             </li>
@@ -225,7 +380,8 @@
             <!-- Mobile -->
             <div class="mobile">
                 
-                    <div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
                 
                 <div class="icon-item navbar-bar">
                     <div class="navbar-bar-middle"></div>
@@ -235,71 +391,105 @@
     </div>
 
     <!-- Mobile drawer -->
-    <div class="navbar-drawer w-full absolute top-0 left-0 bg-background-color">
-        <ul class="drawer-navbar-list flex flex-col justify-start items-center">
+    <div class="navbar-drawer h-screen w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+        <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
             
                 
-                    <li class="drawer-navbar-item text-base my-1.5 flex justify-center items-center">
-                        <a class="rounded-3xl py-1.5 px-5 hover:border hover:!text-primary active:!text-primary group active" 
-                        href="/"  >
-                             
-                                
-                                    <i class="fa-regular fa-house"></i>
-                                
-                                HOME
-                            
-                        </a>
-                    </li>
-                    <!-- Submenu -->
                     
-            
-                
-                    <li class="drawer-navbar-item text-base my-1.5 flex justify-center items-center">
-                        <a class="rounded-3xl py-1.5 px-5 hover:border hover:!text-primary active:!text-primary group " 
-                        href="/links/"  >
-                             
-                                
-                                    <i class="fa-solid fa-link"></i>
-                                
-                                FRIENDS
-                            
-                        </a>
-                    </li>
-                    <!-- Submenu -->
-                    
-            
-                
-                    <li class="drawer-navbar-item text-base my-1.5 flex justify-center items-center">
-                        <a class="rounded-3xl py-1.5 px-5 hover:border hover:!text-primary active:!text-primary group " 
-                        target="_blank" rel="noopener" href="https://www.google.com/"  >
-                             
-                                
-                                    <i class="fa-brands fa-google"></i>
-                                
-                                GOOGLE
-                            
-                        </a>
-                    </li>
-                    <!-- Submenu -->
-                    
-            
-                
-                    <li class="drawer-navbar-item text-base my-1.5 flex justify-center items-center">
-                        <a class="rounded-3xl py-1.5 px-5 hover:border hover:!text-primary active:!text-primary group " 
-                        href="/archives/"  >
-                             
-                                
-                                    <i class="fa-regular fa-archive"></i>
-                                
-                                ARCHIVES
-                            
-                        </a>
-                    </li>
-                    <!-- Submenu -->
-                    
-            
 
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
+                           href="/"
+                        >
+                            <span>
+                                HOME
+                            </span>
+                            
+                                <i class="fa-regular fa-house fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/links/"
+                        >
+                            <span>
+                                FRIENDS
+                            </span>
+                            
+                                <i class="fa-solid fa-link fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           target="_blank" rel="noopener" href="https://www.google.com/"
+                        >
+                            <span>
+                                GOOGLE
+                            </span>
+                            
+                                <i class="fa-brands fa-google fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/archives/"
+                        >
+                            <span>
+                                ARCHIVES
+                            </span>
+                            
+                                <i class="fa-regular fa-archive fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
         </ul>
+
+        <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">11</div>
+        <div class="label text-third-text-color text-sm">Tags</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">13</div>
+        <div class="label text-third-text-color text-sm">Categories</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">36</div>
+        <div class="label text-third-text-color text-sm">Posts</div>
+    </a>
+</div>
     </div>
 
     <div class="window-mask"></div>
@@ -314,6 +504,7 @@
             
                 <div class="home-sidebar-container">
     <div class="sticky-container sticky">
+        
         
             
                 <div class="sidebar-links">
@@ -359,28 +550,28 @@
             
             <div class="sidebar-content"  marginTop >
                 <div class="avatar flex justify-center">
-                    <img src="/images/IMG_5846.JPG">
-                </div>
+    <img src="/images/IMG_5846.JPG">
+</div>
                 <div class="author flex flex-col justify-center my-2.5 mx-0">
-                    <div class="name">Diandian</div>
-                    
-                        <div class="label">funny boy</div>
-                    
-                </div>
-                <div class="statistics">
-                    <a class="item" href="/tags">
-                        <div class="number">11</div>
-                        <div class="label">Tags</div>
-                    </a>
-                    <a class="item" href="/categories">
-                        <div class="number">13</div>
-                        <div class="label">Categories</div>
-                    </a>
-                    <a class="item" href="/archives">
-                        <div class="number">31</div>
-                        <div class="label">Posts</div>
-                    </a>
-                </div>
+    <div class="name">Diandian</div>
+    
+        <div class="label">funny boy</div>
+    
+</div>
+                <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">11</div>
+        <div class="label text-third-text-color text-sm">Tags</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">13</div>
+        <div class="label text-third-text-color text-sm">Categories</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">36</div>
+        <div class="label text-third-text-color text-sm">Posts</div>
+    </a>
+</div>
             </div>
         
 
@@ -404,27 +595,462 @@
                 
 
                 
-                    <div id="home-article-thumbnail" class="relative h-[150px] overflow-hidden rounded-t-[10.8px] md:rounded-t-large -m-5 mb-3 sm:-m-6 sm:mb-4 md:-m-7 md:mb-5">
+                    <div id="home-article-thumbnail" class="home-article-thumbnail relative h-[150px] overflow-hidden rounded-t-large">
+                        <a href="/2023/07/19/%E7%94%B5%E7%A3%81%E5%9C%BA%E7%90%86%E8%AE%BA/">
+                            <img src="/images/magpictures.jpg" alt="电磁场理论" class="w-full h-full object-cover dark:brightness-75 transition-all" />
+                        </a>
+                    </div>
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-5">
+                    <h3 class="home-article-title">
+                        <a href="/2023/07/19/%E7%94%B5%E7%A3%81%E5%9C%BA%E7%90%86%E8%AE%BA/">
+                            电磁场理论
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            <p>此文章主要分享2系大二下《电磁场理论》往年考题和课后习题答案。</p>
+
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Wed Jul 19 2023 15:31:47 GMT+0800">
+                
+                    2023-07-19
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/Courses/">Courses</a>&nbsp;
+                        </li>
+                    
+                    
+                
+                    
+                        
+                            <li>></li>
+                        
+                        <li>
+                            <a href="/categories/Courses/%E7%94%B5%E7%A3%81%E5%9C%BA%E7%90%86%E8%AE%BA/">电磁场理论</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/mid-test/">mid-test</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/tags/final-test/">final-test</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2023/07/19/%E7%94%B5%E7%A3%81%E5%9C%BA%E7%90%86%E8%AE%BA/">Read more<span class="seo-reader-text">电磁场理论</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+                    
+                
+
+                
+                    <div id="home-article-thumbnail" class="home-article-thumbnail relative h-[150px] overflow-hidden rounded-t-large">
+                        <a href="/2023/07/19/%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A6%EF%BC%882%EF%BC%89/">
+                            <img src="/images/courpictures.jpg" alt="基础物理学（2）" class="w-full h-full object-cover dark:brightness-75 transition-all" />
+                        </a>
+                    </div>
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-5">
+                    <h3 class="home-article-title">
+                        <a href="/2023/07/19/%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A6%EF%BC%882%EF%BC%89/">
+                            基础物理学（2）
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            <p>此文章主要分享基础物理学（2）的考试题库与往年题。</p>
+
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Wed Jul 19 2023 10:51:02 GMT+0800">
+                
+                    2023-07-19
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/Courses/">Courses</a>&nbsp;
+                        </li>
+                    
+                    
+                
+                    
+                        
+                            <li>></li>
+                        
+                        <li>
+                            <a href="/categories/Courses/%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A6%EF%BC%882%EF%BC%89/">基础物理学（2）</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/final-test/">final-test</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2023/07/19/%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A6%EF%BC%882%EF%BC%89/">Read more<span class="seo-reader-text">基础物理学（2）</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+                    
+                
+
+                
+                    <div id="home-article-thumbnail" class="home-article-thumbnail relative h-[150px] overflow-hidden rounded-t-large">
+                        <a href="/2023/07/18/%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97%E4%B8%8E%E5%BE%80%E5%B9%B4%E9%A2%98%E5%88%86%E4%BA%AB/">
+                            <img src="/images/elecpictures.jpg" alt="电路分析学习心得与往年题分享" class="w-full h-full object-cover dark:brightness-75 transition-all" />
+                        </a>
+                    </div>
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-5">
+                    <h3 class="home-article-title">
+                        <a href="/2023/07/18/%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97%E4%B8%8E%E5%BE%80%E5%B9%B4%E9%A2%98%E5%88%86%E4%BA%AB/">
+                            电路分析学习心得与往年题分享
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            <p>此文章主要分享2系大二上专业课《电路分析》的一些学习心得与考试往年题（已更新至2022-2023学年）。</p>
+
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Tue Jul 18 2023 16:11:21 GMT+0800">
+                
+                    2023-07-18
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/Courses/">Courses</a>&nbsp;
+                        </li>
+                    
+                    
+                
+                    
+                        
+                            <li>></li>
+                        
+                        <li>
+                            <a href="/categories/Courses/%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/">电路分析</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/mid-test/">mid-test</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/tags/final-test/">final-test</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/tags/Learning-notes/">Learning notes</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2023/07/18/%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97%E4%B8%8E%E5%BE%80%E5%B9%B4%E9%A2%98%E5%88%86%E4%BA%AB/">Read more<span class="seo-reader-text">电路分析学习心得与往年题分享</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+                    
+                
+
+                
+                    <div id="home-article-thumbnail" class="home-article-thumbnail relative h-[150px] overflow-hidden rounded-t-large">
+                        <a href="/2023/07/17/ClashX%E8%B5%B0%E7%BB%88%E7%AB%AF%E4%B8%8E%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/">
+                            <img src="/images/wallheaven.png" alt="ClashX走终端与命令行的一些问题和解决方式" class="w-full h-full object-cover dark:brightness-75 transition-all" />
+                        </a>
+                    </div>
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-5">
+                    <h3 class="home-article-title">
+                        <a href="/2023/07/17/ClashX%E8%B5%B0%E7%BB%88%E7%AB%AF%E4%B8%8E%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/">
+                            ClashX走终端与命令行的一些问题和解决方式
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            <p>本文主要分享了ClashX在macOS终端与命令行中的局限性，并给出了解决措施。</p>
+
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Mon Jul 17 2023 17:24:40 GMT+0800">
+                
+                    2023-07-17
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/Summary/">Summary</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/ClashX/">ClashX</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2023/07/17/ClashX%E8%B5%B0%E7%BB%88%E7%AB%AF%E4%B8%8E%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/">Read more<span class="seo-reader-text">ClashX走终端与命令行的一些问题和解决方式</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+                    
+                
+
+                
+                    <div id="home-article-thumbnail" class="home-article-thumbnail relative h-[150px] overflow-hidden rounded-t-large">
+                        <a href="/2023/07/17/%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/">
+                            <img src="/images/courpictures.jpg" alt="基础物理实验报告" class="w-full h-full object-cover dark:brightness-75 transition-all" />
+                        </a>
+                    </div>
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-5">
+                    <h3 class="home-article-title">
+                        <a href="/2023/07/17/%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/">
+                            基础物理实验报告
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            <p>此文章主要分享大二两个学期的基础物理实验报告。</p>
+
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Mon Jul 17 2023 15:32:19 GMT+0800">
+                
+                    2023-07-17
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/Courses/">Courses</a>&nbsp;
+                        </li>
+                    
+                    
+                
+                    
+                        
+                            <li>></li>
+                        
+                        <li>
+                            <a href="/categories/Courses/%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C/">基础物理实验</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/Lab-reports/">Lab reports</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2023/07/17/%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/">Read more<span class="seo-reader-text">基础物理实验报告</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+                    
+                
+
+                
+                    <div id="home-article-thumbnail" class="home-article-thumbnail relative h-[150px] overflow-hidden rounded-t-large">
                         <a href="/2023/07/17/%E4%BF%A1%E6%81%AF%E7%B1%BB%E5%A4%A7%E4%B8%80%E8%AF%BE%E7%A8%8B%E5%BE%80%E5%B9%B4%E9%A2%98/">
                             <img src="/images/courpictures.jpg" alt="信息类大一课程往年题" class="w-full h-full object-cover dark:brightness-75 transition-all" />
                         </a>
                     </div>
                 
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-5">
+                    <h3 class="home-article-title">
+                        <a href="/2023/07/17/%E4%BF%A1%E6%81%AF%E7%B1%BB%E5%A4%A7%E4%B8%80%E8%AF%BE%E7%A8%8B%E5%BE%80%E5%B9%B4%E9%A2%98/">
+                            信息类大一课程往年题
+                        </a>
+                    </h3>
 
-                <h3 class="home-article-title">
-                    <a href="/2023/07/17/%E4%BF%A1%E6%81%AF%E7%B1%BB%E5%A4%A7%E4%B8%80%E8%AF%BE%E7%A8%8B%E5%BE%80%E5%B9%B4%E9%A2%98/">
-                        信息类大一课程往年题
-                    </a>
-                </h3>
+                    <div class="home-article-content markdown-body">
+                        
+                            <p>此文章主要分享信息类大一课程的往年考试题目，包括期中与期末，现已更新至2022-2023学年。</p>
 
-                <div class="home-article-content markdown-body">
-                    
-                        <p>此文章主要分享信息类大一课程的往年考试题目，包括期中与期末，现已更新至2022-2023学年。</p>
+                        
+                    </div>
 
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
+                    <div class="home-article-meta-info-container">
     <div class="home-article-meta-info">
         <span><i class="fa-solid fa-calendars"></i>&nbsp;
             <span class="home-article-date" data-date="Mon Jul 17 2023 15:03:20 GMT+0800">
@@ -483,6 +1109,7 @@
     <a href="/2023/07/17/%E4%BF%A1%E6%81%AF%E7%B1%BB%E5%A4%A7%E4%B8%80%E8%AF%BE%E7%A8%8B%E5%BE%80%E5%B9%B4%E9%A2%98/">Read more<span class="seo-reader-text">信息类大一课程往年题</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
 
+                </div>
             </li>
         
             <li class="home-article-item">
@@ -494,27 +1121,27 @@
                 
 
                 
-                    <div id="home-article-thumbnail" class="relative h-[150px] overflow-hidden rounded-t-[10.8px] md:rounded-t-large -m-5 mb-3 sm:-m-6 sm:mb-4 md:-m-7 md:mb-5">
+                    <div id="home-article-thumbnail" class="home-article-thumbnail relative h-[150px] overflow-hidden rounded-t-large">
                         <a href="/2023/07/16/%E5%89%AA%E8%BE%91%E8%84%9A%E6%9C%AC%E4%B8%8E%E6%80%9D%E8%B7%AF%E5%88%86%E4%BA%AB/">
                             <img src="/images/vcpictures.jpg" alt="剪辑脚本与思路分享" class="w-full h-full object-cover dark:brightness-75 transition-all" />
                         </a>
                     </div>
                 
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-5">
+                    <h3 class="home-article-title">
+                        <a href="/2023/07/16/%E5%89%AA%E8%BE%91%E8%84%9A%E6%9C%AC%E4%B8%8E%E6%80%9D%E8%B7%AF%E5%88%86%E4%BA%AB/">
+                            剪辑脚本与思路分享
+                        </a>
+                    </h3>
 
-                <h3 class="home-article-title">
-                    <a href="/2023/07/16/%E5%89%AA%E8%BE%91%E8%84%9A%E6%9C%AC%E4%B8%8E%E6%80%9D%E8%B7%AF%E5%88%86%E4%BA%AB/">
-                        剪辑脚本与思路分享
-                    </a>
-                </h3>
+                    <div class="home-article-content markdown-body">
+                        
+                            <p>此文章主要会分享不同类型的视频剪辑思路与准备工作。其中，剪辑脚本部分由Diandian和BUAA影协的朋友们共同撰写完成。</p>
 
-                <div class="home-article-content markdown-body">
-                    
-                        <p>此文章主要会分享不同类型的视频剪辑思路与准备工作。其中，剪辑脚本部分由Diandian和BUAA影协的朋友们共同撰写完成。</p>
+                        
+                    </div>
 
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
+                    <div class="home-article-meta-info-container">
     <div class="home-article-meta-info">
         <span><i class="fa-solid fa-calendars"></i>&nbsp;
             <span class="home-article-date" data-date="Sun Jul 16 2023 15:11:46 GMT+0800">
@@ -563,6 +1190,7 @@
     <a href="/2023/07/16/%E5%89%AA%E8%BE%91%E8%84%9A%E6%9C%AC%E4%B8%8E%E6%80%9D%E8%B7%AF%E5%88%86%E4%BA%AB/">Read more<span class="seo-reader-text">剪辑脚本与思路分享</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
 
+                </div>
             </li>
         
             <li class="home-article-item">
@@ -574,27 +1202,27 @@
                 
 
                 
-                    <div id="home-article-thumbnail" class="relative h-[150px] overflow-hidden rounded-t-[10.8px] md:rounded-t-large -m-5 mb-3 sm:-m-6 sm:mb-4 md:-m-7 md:mb-5">
+                    <div id="home-article-thumbnail" class="home-article-thumbnail relative h-[150px] overflow-hidden rounded-t-large">
                         <a href="/2023/07/16/15%E5%A5%97Ae%E6%8F%92%E4%BB%B6%E4%BB%8B%E7%BB%8D%E4%B8%8E%E5%AE%89%E8%A3%85/">
                             <img src="/images/vcpictures.jpg" alt="15套Ae插件介绍与安装" class="w-full h-full object-cover dark:brightness-75 transition-all" />
                         </a>
                     </div>
                 
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-5">
+                    <h3 class="home-article-title">
+                        <a href="/2023/07/16/15%E5%A5%97Ae%E6%8F%92%E4%BB%B6%E4%BB%8B%E7%BB%8D%E4%B8%8E%E5%AE%89%E8%A3%85/">
+                            15套Ae插件介绍与安装
+                        </a>
+                    </h3>
 
-                <h3 class="home-article-title">
-                    <a href="/2023/07/16/15%E5%A5%97Ae%E6%8F%92%E4%BB%B6%E4%BB%8B%E7%BB%8D%E4%B8%8E%E5%AE%89%E8%A3%85/">
-                        15套Ae插件介绍与安装
-                    </a>
-                </h3>
+                    <div class="home-article-content markdown-body">
+                        
+                            <p>此文章搜集并涵盖了几乎所有大型宣传片与影视剧制作特效时所能用到的Ae插件（Win&#x2F;Mac版），并对这些插件进行简单介绍。</p>
 
-                <div class="home-article-content markdown-body">
-                    
-                        <p>此文章搜集并涵盖了几乎所有大型宣传片与影视剧制作特效时所能用到的Ae插件（Win&#x2F;Mac版），并对这些插件进行简单介绍。</p>
+                        
+                    </div>
 
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
+                    <div class="home-article-meta-info-container">
     <div class="home-article-meta-info">
         <span><i class="fa-solid fa-calendars"></i>&nbsp;
             <span class="home-article-date" data-date="Sun Jul 16 2023 09:52:10 GMT+0800">
@@ -638,6 +1266,7 @@
     <a href="/2023/07/16/15%E5%A5%97Ae%E6%8F%92%E4%BB%B6%E4%BB%8B%E7%BB%8D%E4%B8%8E%E5%AE%89%E8%A3%85/">Read more<span class="seo-reader-text">15套Ae插件介绍与安装</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
 
+                </div>
             </li>
         
             <li class="home-article-item">
@@ -649,27 +1278,27 @@
                 
 
                 
-                    <div id="home-article-thumbnail" class="relative h-[150px] overflow-hidden rounded-t-[10.8px] md:rounded-t-large -m-5 mb-3 sm:-m-6 sm:mb-4 md:-m-7 md:mb-5">
+                    <div id="home-article-thumbnail" class="home-article-thumbnail relative h-[150px] overflow-hidden rounded-t-large">
                         <a href="/2023/07/15/Pr-%E8%BD%AC%E5%9C%BA%E9%A2%84%E8%AE%BE%E7%9A%84%E4%BD%BF%E7%94%A8/">
                             <img src="/images/vcpictures.jpg" alt="Pr 转场预设的使用" class="w-full h-full object-cover dark:brightness-75 transition-all" />
                         </a>
                     </div>
                 
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-5">
+                    <h3 class="home-article-title">
+                        <a href="/2023/07/15/Pr-%E8%BD%AC%E5%9C%BA%E9%A2%84%E8%AE%BE%E7%9A%84%E4%BD%BF%E7%94%A8/">
+                            Pr 转场预设的使用
+                        </a>
+                    </h3>
 
-                <h3 class="home-article-title">
-                    <a href="/2023/07/15/Pr-%E8%BD%AC%E5%9C%BA%E9%A2%84%E8%AE%BE%E7%9A%84%E4%BD%BF%E7%94%A8/">
-                        Pr 转场预设的使用
-                    </a>
-                </h3>
+                    <div class="home-article-content markdown-body">
+                        
+                            <p>此文章包括Pr 转场预设的分享与使用教程。</p>
 
-                <div class="home-article-content markdown-body">
-                    
-                        <p>此文章包括Pr 转场预设的分享与使用教程。</p>
+                        
+                    </div>
 
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
+                    <div class="home-article-meta-info-container">
     <div class="home-article-meta-info">
         <span><i class="fa-solid fa-calendars"></i>&nbsp;
             <span class="home-article-date" data-date="Sat Jul 15 2023 15:03:49 GMT+0800">
@@ -713,6 +1342,7 @@
     <a href="/2023/07/15/Pr-%E8%BD%AC%E5%9C%BA%E9%A2%84%E8%AE%BE%E7%9A%84%E4%BD%BF%E7%94%A8/">Read more<span class="seo-reader-text">Pr 转场预设的使用</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
 
+                </div>
             </li>
         
             <li class="home-article-item">
@@ -724,27 +1354,27 @@
                 
 
                 
-                    <div id="home-article-thumbnail" class="relative h-[150px] overflow-hidden rounded-t-[10.8px] md:rounded-t-large -m-5 mb-3 sm:-m-6 sm:mb-4 md:-m-7 md:mb-5">
+                    <div id="home-article-thumbnail" class="home-article-thumbnail relative h-[150px] overflow-hidden rounded-t-large">
                         <a href="/2023/07/15/%E5%B8%B8%E7%94%A8%E5%9B%BE%E5%83%8F%E4%B8%8E%E5%BD%B1%E8%A7%86%E5%A4%84%E7%90%86%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/">
                             <img src="/images/vcpictures.jpg" alt="常用图像与影视处理软件安装" class="w-full h-full object-cover dark:brightness-75 transition-all" />
                         </a>
                     </div>
                 
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-5">
+                    <h3 class="home-article-title">
+                        <a href="/2023/07/15/%E5%B8%B8%E7%94%A8%E5%9B%BE%E5%83%8F%E4%B8%8E%E5%BD%B1%E8%A7%86%E5%A4%84%E7%90%86%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/">
+                            常用图像与影视处理软件安装
+                        </a>
+                    </h3>
 
-                <h3 class="home-article-title">
-                    <a href="/2023/07/15/%E5%B8%B8%E7%94%A8%E5%9B%BE%E5%83%8F%E4%B8%8E%E5%BD%B1%E8%A7%86%E5%A4%84%E7%90%86%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/">
-                        常用图像与影视处理软件安装
-                    </a>
-                </h3>
+                    <div class="home-article-content markdown-body">
+                        
+                            <p>此文章包括Adobe全家桶的下载（Win&#x2F;Mac版）以及常用图像与影视处理软件的介绍。</p>
 
-                <div class="home-article-content markdown-body">
-                    
-                        <p>此文章包括Adobe全家桶的下载（Win&#x2F;Mac版）以及常用图像与影视处理软件的介绍。</p>
+                        
+                    </div>
 
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
+                    <div class="home-article-meta-info-container">
     <div class="home-article-meta-info">
         <span><i class="fa-solid fa-calendars"></i>&nbsp;
             <span class="home-article-date" data-date="Sat Jul 15 2023 15:03:09 GMT+0800">
@@ -798,406 +1428,12 @@
     <a href="/2023/07/15/%E5%B8%B8%E7%94%A8%E5%9B%BE%E5%83%8F%E4%B8%8E%E5%BD%B1%E8%A7%86%E5%A4%84%E7%90%86%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/">Read more<span class="seo-reader-text">常用图像与影视处理软件安装</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
 
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-                    
-                
-
-                
-                    <div id="home-article-thumbnail" class="relative h-[150px] overflow-hidden rounded-t-[10.8px] md:rounded-t-large -m-5 mb-3 sm:-m-6 sm:mb-4 md:-m-7 md:mb-5">
-                        <a href="/2023/07/14/%E7%8C%AA%E8%84%9A%E8%AF%B4%E7%AC%AC%E5%8D%81%E5%85%AD%E6%9C%9F/">
-                            <img src="/images/dspicture.jpg" alt="猪脚说第十六期" class="w-full h-full object-cover dark:brightness-75 transition-all" />
-                        </a>
-                    </div>
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2023/07/14/%E7%8C%AA%E8%84%9A%E8%AF%B4%E7%AC%AC%E5%8D%81%E5%85%AD%E6%9C%9F/">
-                        猪脚说第十六期
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        <p>由Riccardo与Diandian编写完成，主要包括助教工作总结以及临别感言。</p>
-
-                    
                 </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Fri Jul 14 2023 23:07:39 GMT+0800">
-                
-                    2023-07-14
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/DataStructure/">DataStructure</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/Typora/">Typora</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/tags/C/">C</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2023/07/14/%E7%8C%AA%E8%84%9A%E8%AF%B4%E7%AC%AC%E5%8D%81%E5%85%AD%E6%9C%9F/">Read more<span class="seo-reader-text">猪脚说第十六期</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-                    
-                
-
-                
-                    <div id="home-article-thumbnail" class="relative h-[150px] overflow-hidden rounded-t-[10.8px] md:rounded-t-large -m-5 mb-3 sm:-m-6 sm:mb-4 md:-m-7 md:mb-5">
-                        <a href="/2023/07/14/%E7%8C%AA%E8%84%9A%E8%AF%B4%E7%AC%AC%E5%8D%81%E4%BA%94%E6%9C%9F/">
-                            <img src="/images/dspicture.jpg" alt="猪脚说第十五期" class="w-full h-full object-cover dark:brightness-75 transition-all" />
-                        </a>
-                    </div>
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2023/07/14/%E7%8C%AA%E8%84%9A%E8%AF%B4%E7%AC%AC%E5%8D%81%E4%BA%94%E6%9C%9F/">
-                        猪脚说第十五期
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        <p>由Riccardo与Diandian编写完成，主要包括第六次和第七次作业的编程题解。</p>
-
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Fri Jul 14 2023 23:03:20 GMT+0800">
-                
-                    2023-07-14
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/DataStructure/">DataStructure</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/C/">C</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/tags/answers/">answers</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2023/07/14/%E7%8C%AA%E8%84%9A%E8%AF%B4%E7%AC%AC%E5%8D%81%E4%BA%94%E6%9C%9F/">Read more<span class="seo-reader-text">猪脚说第十五期</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-                    
-                
-
-                
-                    <div id="home-article-thumbnail" class="relative h-[150px] overflow-hidden rounded-t-[10.8px] md:rounded-t-large -m-5 mb-3 sm:-m-6 sm:mb-4 md:-m-7 md:mb-5">
-                        <a href="/2023/07/14/%E7%8C%AA%E8%84%9A%E8%AF%B4%E7%AC%AC%E5%8D%81%E5%9B%9B%E6%9C%9F/">
-                            <img src="/images/dspicture.jpg" alt="猪脚说第十四期" class="w-full h-full object-cover dark:brightness-75 transition-all" />
-                        </a>
-                    </div>
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2023/07/14/%E7%8C%AA%E8%84%9A%E8%AF%B4%E7%AC%AC%E5%8D%81%E5%9B%9B%E6%9C%9F/">
-                        猪脚说第十四期
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        <p>由Riccardo与Diandian编写完成，主要包括数据结构的知识点自查与其他科目的复习建议。</p>
-
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Fri Jul 14 2023 23:00:07 GMT+0800">
-                
-                    2023-07-14
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/DataStructure/">DataStructure</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/C/">C</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/tags/final-test/">final-test</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2023/07/14/%E7%8C%AA%E8%84%9A%E8%AF%B4%E7%AC%AC%E5%8D%81%E5%9B%9B%E6%9C%9F/">Read more<span class="seo-reader-text">猪脚说第十四期</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-                    
-                
-
-                
-                    <div id="home-article-thumbnail" class="relative h-[150px] overflow-hidden rounded-t-[10.8px] md:rounded-t-large -m-5 mb-3 sm:-m-6 sm:mb-4 md:-m-7 md:mb-5">
-                        <a href="/2023/07/14/%E7%8C%AA%E8%84%9A%E8%AF%B4%E7%AC%AC%E5%8D%81%E4%B8%89%E6%9C%9F/">
-                            <img src="/images/dspicture.jpg" alt="猪脚说第十三期" class="w-full h-full object-cover dark:brightness-75 transition-all" />
-                        </a>
-                    </div>
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2023/07/14/%E7%8C%AA%E8%84%9A%E8%AF%B4%E7%AC%AC%E5%8D%81%E4%B8%89%E6%9C%9F/">
-                        猪脚说第十三期
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        <p>由Riccardo与Diandian编写完成，主要包括22级信息类ds大作业相关问题和函数指针引入。</p>
-
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Fri Jul 14 2023 22:51:36 GMT+0800">
-                
-                    2023-07-14
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/DataStructure/">DataStructure</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/C/">C</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2023/07/14/%E7%8C%AA%E8%84%9A%E8%AF%B4%E7%AC%AC%E5%8D%81%E4%B8%89%E6%9C%9F/">Read more<span class="seo-reader-text">猪脚说第十三期</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-                    
-                
-
-                
-                    <div id="home-article-thumbnail" class="relative h-[150px] overflow-hidden rounded-t-[10.8px] md:rounded-t-large -m-5 mb-3 sm:-m-6 sm:mb-4 md:-m-7 md:mb-5">
-                        <a href="/2023/07/14/%E7%8C%AA%E8%84%9A%E8%AF%B4%E7%AC%AC%E5%8D%81%E4%BA%8C%E6%9C%9F/">
-                            <img src="/images/dspicture.jpg" alt="猪脚说第十二期" class="w-full h-full object-cover dark:brightness-75 transition-all" />
-                        </a>
-                    </div>
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2023/07/14/%E7%8C%AA%E8%84%9A%E8%AF%B4%E7%AC%AC%E5%8D%81%E4%BA%8C%E6%9C%9F/">
-                        猪脚说第十二期
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        <p>由Riccardo与Diandian编写完成，主要包括第五次作业编程题解。</p>
-
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Fri Jul 14 2023 22:47:09 GMT+0800">
-                
-                    2023-07-14
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/DataStructure/">DataStructure</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/C/">C</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/tags/answers/">answers</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2023/07/14/%E7%8C%AA%E8%84%9A%E8%AF%B4%E7%AC%AC%E5%8D%81%E4%BA%8C%E6%9C%9F/">Read more<span class="seo-reader-text">猪脚说第十二期</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
             </li>
         
     </ul>
 
-    <div class="home-paginator">
+    <div class="home-paginator px-7 py-5">
         <div class="paginator">
     <a class="extend prev" rel="prev" href="/"><i class="fa-regular fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/"><i class="fa-regular fa-angle-right"></i></a>
 </div>
@@ -1227,7 +1463,7 @@
             2024&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">Diandian</a>
         </div>
         
-            <script data-swup-reload-script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <script data-swup-reload-script src="https://cn.vercount.one/js"></script>
             <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
                 
                     <span id="busuanzi_container_site_uv" class="lg:!block">
@@ -1245,7 +1481,7 @@
         
         <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
             <span class="lg:block text-sm">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a></span>
-            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.5.0</a></span>
+            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.6.0</a></span>
         </div>
         
         
@@ -1359,7 +1595,7 @@
 </main>
 
 
-    <script src="https://evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/js/libs/Swup.min.js"></script><script src="https://evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/js/libs/SwupSlideTheme.min.js"></script><script src="https://evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/js/libs/SwupScriptsPlugin.min.js"></script><script src="https://evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/js/libs/SwupProgressPlugin.min.js"></script><script src="https://evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/js/libs/SwupScrollPlugin.min.js"></script><script src="https://evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/js/libs/SwupPreloadPlugin.min.js"></script>
+    <script src="https://evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/js/libs/Swup.min.js"></script><script src="https://evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/js/libs/SwupSlideTheme.min.js"></script><script src="https://evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/js/libs/SwupScriptsPlugin.min.js"></script><script src="https://evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/js/libs/SwupProgressPlugin.min.js"></script><script src="https://evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/js/libs/SwupScrollPlugin.min.js"></script><script src="https://evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/js/libs/SwupPreloadPlugin.min.js"></script>
 <script>
     const swup = new Swup({
         plugins: [
@@ -1385,29 +1621,31 @@
 
 
 
-<script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/js/tools/imageViewer.js"></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/js/utils.js"></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/js/main.js"></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/js/layouts/navbarShrink.js"></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/js/tools/scrollTopBottom.js"></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/js/tools/lightDarkSwitch.js"></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/js/layouts/categoryList.js"></script>
+<script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/js/tools/imageViewer.js"></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/js/utils.js"></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/js/main.js"></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/js/layouts/navbarShrink.js"></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/js/tools/scrollTopBottom.js"></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/js/tools/lightDarkSwitch.js"></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/js/layouts/categoryList.js"></script>
 
 
-    <script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/js/tools/localSearch.js"></script>
-
-
-
-    <script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/js/tools/codeBlock.js"></script>
+    <script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/js/tools/localSearch.js"></script>
 
 
 
-    <script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/js/layouts/lazyload.js"></script>
+    <script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/js/tools/codeBlock.js"></script>
 
 
 
-    <script src="https://evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/js/tools/runtime.js"></script>
-    <script src="https://evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/js/libs/odometer.min.js"></script>
-    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/assets/odometer-theme-minimal.css">
+    <script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/js/layouts/lazyload.js"></script>
 
 
 
-  <script src="https://evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/js/libs/Typed.min.js"></script>
-  <script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/js/plugins/typed.js"></script>
+    <script src="https://evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/js/tools/runtime.js"></script>
+    <script src="https://evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/js/libs/odometer.min.js"></script>
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/assets/odometer-theme-minimal.css">
+
+
+
+  <script src="https://evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/js/libs/Typed.min.js"></script>
+  <script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/js/plugins/typed.js"></script>
+
+
 
 
 
@@ -1416,8 +1654,7 @@
 
 <div class="post-scripts" data-swup-reload-script>
     
-        <script src="https://evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/js/libs/anime.min.js"></script>
-        <script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/js/tools/tocToggle.js"></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/js/layouts/toc.js"></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.5.0/source/js/plugins/tabs.js"></script>
+        <script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/js/tools/tocToggle.js"></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/js/layouts/toc.js"></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.6.0/source/js/plugins/tabs.js"></script>
     
 </div>
 
