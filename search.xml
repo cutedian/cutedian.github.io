@@ -3380,12 +3380,19 @@
   <entry>
     <title>通信基础实验</title>
     <url>/2024/01/25/%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80%E5%AE%9E%E9%AA%8C/</url>
-    <content><![CDATA[<p>这门课程为2021级新开设的课程，Diandian自己也没学明白，但是好歹实验报告做出来了……蒽。</p>
-<h2 id="资料下载"><a href="#资料下载" class="headerlink" title="资料下载"></a>资料下载</h2><p>点击下方按钮即可直达通信基础实验的实验报告哦～</p>
-<a class="button  center large" href='https://pan.baidu.com/s/1QbWFoT0FFeSyhEGZgCBc5Q?pwd=42cm' title='通信基础实验实验报告下载'><i class='fa-solid fa-paper-plane'></i> 通信基础实验实验报告下载</a>
-
-<p>上述链接为百度网盘链接，文件大小为403M，提取码为：42cm</p>
-]]></content>
+    <content><![CDATA[
+<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="86b2a382a05512e4c31f53353b28c4a2cf2865ecb1b17b7605691be759c5434a">10d79030e8222445804370796b90fca150728871a5667dcf17a7d8f16ee43fd5afe52d9070242b036e611847859cfe04c937f98acdb497159569ef2c857e71863e47a067f4881612ea1c84d8e84e0baec9a0a0c863192232f9ee6b6a369f66a0d6285d4155cb1c9aebe8645665d1d2fcd2acd49b90c87ce83953fa0716284a250caa7edd25f9a18e1992080a5bed33baff59855e3407008f525d9c0cbddee4f377133a986864f6d15f68446ac14e89a810822e41ca764f899a064498e4260e3c64746f2f8500bd64f193ee2ab5c6cdf168e3e9e174da9dede6d98f9a2141faf611b40a7b7e47db3e75988d7b1cef6fddd7cce34ce8f7490f1602cfb23da805ed00498c4ab613690d2fce9e2e1c50211d33fa401d90418bfa9c8110b2dc1e6dc0400df072d8ec4efcbdc9b565aff791057d66de50b9632f2b985bc06e8896ee7026bfcb8d7ef5a80a9df4f807c4f425e78e6c30444f37061a6ac1c54932b99d77a82d41ea5bb3942560b3a7efa8d9d4086bfda82e00d5c6cecb5eb8a25ad1d63dd986dbdc3bfb4dc146cbf59336dedc8278e5e895b179b029c6243f5480ff67afdea93501874fb3ef2d1b30d382c63f9ba7dc8c20e1eae471bd85fd9593e04437119c730f30cbdb56f1d621784ca383f215ccbc6b26888fbcd3482208bf83126cf6b13bfc37a2f5c3b62f20ab87ae9ce0439cabfccfef101f3e4e94902c1121641864b94387be461fcd177d8f94cdc8fe75120ce3aeb67e2d4700b680adabc176a628e417c152f591911487f857d39130782ccb1c24e3ac17a0b319b209a5b1d09d6c76f54a2360c41e31a42072ebe64ac696d692bdcece6c0c0ccf3662d45fc140de131e5d1ea6a57c195dc5fa2caffa413c7b70fe719ba4e7dd049a1359696ae56f5643c462b3aa158a48e8ac369d9c</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-swup-reload-script src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
         <category>Courses</category>
         <category>通信基础实验</category>
