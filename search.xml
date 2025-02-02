@@ -3380,24 +3380,46 @@
   <entry>
     <title>通信基础实验</title>
     <url>/2024/01/25/%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80%E5%AE%9E%E9%AA%8C/</url>
-    <content><![CDATA[
-<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="50a437e269680d6da551575fefc65323599b0c09d24206568aa80ac45a51dcb3">581b83a6181222a12fe1a6d3324e879a309c0b06ad4528b39332c4b1cdad65910f277bdbb0c48f28abbeffe50918a0537730df12176875baa671a7d212212a0bea76379f2e0ea81761cfc0734f528aa2251683c6dd1585eab4a44cae7b8e81c11ffd2200e9edd9f41ffdcbf4737650cd01b54bb44221cc2ba05c702dcd5f4c56bc799f39491dbe128a55894455b1fce69d64622b21a3b862c6dde9dfa2893b530bf1c8e1d0e630f3b9587feb0ab2914b1c1a8e2d898ade2947fe960d2e5af08337580ea47eaa1e834dcbdc7c74fd2ad6834ddb05bf995c5c0d5a09009e538f33abf8a181124b5622e953c163dfc65116044989cfb1748167e4b6e80d2d53d54a1c9545ee8f56e9b1c0b4b03c7327b3d392730fa89e8a7b99f11025bdc6f1b0bc91531550f3d745853422e617904195ca4bb1736e0c43551d16f137ba23e266eb4c37f80d538330cc9b8e87d09a328076d60bb242fe25fc93aab20d9e39d9bce7c70ca5b3cca821683020aa97d8fe4cfff77ec26c0350ddd7f0402f96f97c891b36373369979d23e3d028fc56d6d30e92f7377e48d278898a3018846dce26bc86ae6fd67f24c404071b2e39bb0b8f0fa3747b94b587f5bc949742ddba0441ff1f014335fba9a9dbbfb8f148a880e07ec9f11acf6f528d27fbe074a999a44e7ee7f366464cd23d0c683d6f631373ef992bcde13240bef74f0d6e8972e221f3a187067f6dd0adb7ac29c3a1ec76047a221c8033f5102216504d956d7217c78910f79f71804972722195f22cea6fecfeaced1bdec659b9cc008be6a4d14f187869f54e1bd2acb953f0d7b5e6321560ba62d3cde566ee9fa713f442d4ad93cef7000564606eebf906657291b9c7817cde40cddf13bec0455e60e91d40c9731e2eafe3103890eb1d76cfbc073767d1cec79a05</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-swup-reload-script src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+    <content><![CDATA[<p>这门课程为2021级新开设的课程，Diandian自己也没学明白，但是好歹实验报告做出来了……蒽。</p>
+<h2 id="资料下载"><a href="#资料下载" class="headerlink" title="资料下载"></a>资料下载</h2><p>点击下方按钮即可直达通信基础实验的实验报告哦～</p>
+<a class="button  center large" href='https://pan.baidu.com/s/1QbWFoT0FFeSyhEGZgCBc5Q?pwd=42cm' title='通信基础实验实验报告下载'><i class='fa-solid fa-paper-plane'></i> 通信基础实验实验报告下载</a>
+
+<p>上述链接为百度网盘链接，文件大小为403M，提取码为：42cm</p>
+]]></content>
       <categories>
         <category>Courses</category>
         <category>通信基础实验</category>
       </categories>
       <tags>
+        <tag>Lab reports</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2系大三下学期专业课（通信工程）</title>
+    <url>/2025/02/02/2%E7%B3%BB%E5%A4%A7%E4%B8%89%E4%B8%8B%E5%AD%A6%E6%9C%9F%E4%B8%93%E4%B8%9A%E8%AF%BE%EF%BC%88%E9%80%9A%E4%BF%A1%E5%B7%A5%E7%A8%8B%EF%BC%89/</url>
+    <content><![CDATA[<h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>整理大三下学期的资料真的是路途坎坷，要了老命😭😭</p>
+<p>其一，是因为这些专业课程本来就有点抽象，尤其是嵌入式、微机原理和现代通信天线等课程<strong>上得真的跟通识课没啥区别</strong>，属于是在一学期之内要学很多很杂且很难整理的知识点。</p>
+<p>其二，由于Diandian自己在大三下学期结束后，由于实习、辅导员等工作没有第一时间整理资料，后又换了电脑，<strong>导致这些课程的资料分散在三个电脑上</strong>，幸好2025年寒假回家前一晚通宵整理，才有了现在这一份<strong>我们当时从来没有过的还算齐全的资料（大言不惭地可称之为空前）</strong>。</p>
+<p>其三，大三下带给我的保研选导师、辅导员面试等等压力，使我在备考时一度想放弃这么多电子资料以及手写资料的整理，<strong>感谢lsw和gh这两位自习搭子</strong>，陪着我一同奋战。由于个人能力实在有限，很多课程的知识点梳理以及纠错离不开2021级很多学长学姐的帮助，<strong>大力感谢zyy、mjh、cxx、zzj、wx、lzh</strong>。以及感谢所有专业课程实验分组的队友们，在期末验收的同时，我在准备辅导员笔试与答辩，他们真的帮了我很多。</p>
+<p>其四，感谢2022级友友们的催更，如此庞大的访问量和阅读量才能给我继续更新下去的动力。说实话，很多时候事情一多，<strong>是真的会丧失维护个人兴趣爱好的精力和能力</strong>。</p>
+<p>2025年1月26日凌晨04:38，夜深人静，我翻阅着这些零散的笔记、未曾整理的课件，<strong>仿佛又回到了那个奔忙不休的大三下</strong>。那些埋首书页的夜晚、实验室里未曾熄灭的灯光、笔尖划过草稿纸的沙沙声……**<u>所有的疲惫、焦虑、彷徨，最终都定格在了这一份沉甸甸的资料里。</u>**</p>
+<p>这一路，走得跌跌撞撞，也曾几度想要放弃。繁杂抽象的专业课，实验代码的推倒重来，期末备考的仓促与压力，保研前路的焦虑与未知……太多次，**<u>我在选择和坚持之间徘徊</u><strong>，太多次，我在深夜问自己：“这些努力真的会被看见吗？”幸好，在那些几乎耗尽意志的时刻，有朋友以及麻辣小龙虾陪我熬过了</strong><u>新主楼F3卡座的漫长夜晚</u><strong>，有开导、欣导和学长学姐指引我迷茫的方向，还有你们，</strong><u>一直在等待这份整理的最终落成</u>**。</p>
+<p>于是我明白，有些坚持，也许不会立刻见到光亮，但它终究会在未来的某个清晨，化作窗前的一缕阳光，温柔地落在我们肩上。</p>
+<p>而现在的你，是否也正站在那个充满未知的路口？或是在为保研的最后一搏拼尽全力，或是在更好的高校与导师之间反复斟酌，或是独自挑灯夜战，奔赴考研的战场。你是否也曾在焦虑中怀疑过自己，在压力下迷失过方向？</p>
+<p>请你相信，所有的付出都会被岁月铭记，所有的汗水终将凝结成光。人生的路从来不会白走，每一步都算数。那些在深夜独自承受的煎熬，那些无数次周而复始的努力，**<u>那些你以为无人问津的坚持</u>**，都会在未来的某一刻，给你最温暖的回响。</p>
+<p>愿你继续怀揣热爱，步履不停；愿你熬过孤独，抵达山顶。愿多年以后，回头望去，**<u>你依然为曾经那个拼尽全力的自己而骄傲</u>**。</p>
+<h2 id="资料下载"><a href="#资料下载" class="headerlink" title="资料下载"></a>资料下载</h2><p>**<u>所有课程资料总大小为8.87Gb（我也不知道为什么这么多）</u>**，所以准备了北航云盘的链接，但貌似部分电脑在北航云盘下载过大文件时，会出现网络丢包，所以每个课程的资料也额外准备了百度网盘的链接，大家自取就行😋</p>
+<p>点击下方按钮即可2系大三下学期专业课（通信工程）资料下载链接哦～</p>
+<a class="button  center large" href='https://bhpan.buaa.edu.cn/link/AAC85F1FC77CF845BC8EB71F348A27CF8D' title='数字电路系统资料下载'><i class='fa-solid fa-paper-plane'></i> 数字电路系统资料下载</a>
+
+<p>链接提取码为：0000</p>
+<p>持续更新中……</p>
+]]></content>
+      <categories>
+        <category>Courses</category>
+      </categories>
+      <tags>
+        <tag>final-test</tag>
         <tag>Lab reports</tag>
       </tags>
   </entry>
