@@ -3420,7 +3420,7 @@
 <p>该文件夹包括：</p>
 <ul>
 <li>张涛老师班级全套课件</li>
-<li>考试知识点整理（自己手写版，建议考前一定要过一遍）</li>
+<li>考试知识点整理（自己手写版，是对所有ppt的总结和提炼，建议考前一定要过一遍）</li>
 <li>仿真实验报告</li>
 <li>期末模拟试题5套（这5套几乎涵盖了所有要考察的知识点，建议必做！！含标准答案）</li>
 <li>很多套比较杂乱的往年题（建议复习充分后有选择性地做），自写答案涵盖16年、20年和22年</li>
@@ -3431,6 +3431,48 @@
 <li>作为通信工程专业的同学，建议大家在学习这门课的时候，思考通信中的两个关键词“可靠性”和“有效性”，这两个词可能是今后大家所有研究项目中最重要的指标，所有的新设计与优化改进几乎都是基于这两个词展开的；</li>
 <li>关于实验：2021级进行了全方面的修改，改为了基于线上仿真平台与网站的实验，实验内容比较简单，几乎照着实验说明做就行，<u><strong>可以提前做，上实验课的时候直接找助教验收即可</strong></u>。</li>
 </ul>
+<h3 id="自动控制原理"><a href="#自动控制原理" class="headerlink" title="自动控制原理"></a>自动控制原理</h3><h4 id="资料下载-1"><a href="#资料下载-1" class="headerlink" title="资料下载"></a>资料下载</h4><p>点击下方按钮即可直达自动控制原理资料下载链接哦～</p>
+<a class="button  center large" href='https://pan.baidu.com/s/1SVTqTstaGMMXA4TffpfkDQ?pwd=sr8q' title='自动控制原理资料下载'><i class='fa-solid fa-paper-plane'></i> 自动控制原理资料下载</a>
+
+<p>上述链接为百度网盘链接，文件大小为171M，提取码：sr8q</p>
+<p>该文件夹包括：</p>
+<ul>
+<li>高飞老师班级全套课件</li>
+<li>考试知识点整理（自己手写版，绝对的重点，建议考前一定要过一遍）</li>
+<li>5个仿真实验源代码以及报告</li>
+<li>教材电子版以及课后习题答案</li>
+<li>有一个2007年自控试题建议先做一下，考察的比较全面且题型相同</li>
+<li>11套往年题（含部分答案，其中近三年的一定要做）</li>
+</ul>
+<h4 id="一些说明-1"><a href="#一些说明-1" class="headerlink" title="一些说明"></a>一些说明</h4><ul>
+<li>这门课的计算难度真的超标！！！其次很多术语的含义（如一阶二阶系统等）所对应的计算公式（如超调量等）是需要充分理解并背下来的，考前一定要对着手写复习笔记过一遍；</li>
+<li>考试所考察的章节已经在电子版教材的目录中勾画出，因为计算量实在太大，所以上课和复习的时候会很容易就晕了，建议上课时注意把握重点章节即可；</li>
+<li>关于实验：是祖传的实验和代码，但建议大家在撰写实验报告时不要抄的太明显，很多表述以及行文标题和结构可以换一下，<u><strong>因为这门课真的会查重！！！</strong></u></li>
+</ul>
+<h3 id="信息论基础"><a href="#信息论基础" class="headerlink" title="信息论基础"></a>信息论基础</h3><h4 id="资料下载-2"><a href="#资料下载-2" class="headerlink" title="资料下载"></a>资料下载</h4><p>点击下方按钮即可直达信息论基础资料下载链接哦～</p>
+<a class="button  center large" href='https://pan.baidu.com/s/1W6EnKlRXWkB6yiDY-2PEGg?pwd=fn6r' title='信息论基础资料下载'><i class='fa-solid fa-paper-plane'></i> 信息论基础资料下载</a>
+
+<p>上述链接为百度网盘链接，文件大小为3.75Gb，提取码：fn6r</p>
+<p>该文件夹包括：</p>
+<ul>
+<li>于泽老师班级全套课件（课件真的很大但全部都是老师自己做的，真的是精品课件！！！其中很多的动画演示建议结合于老师讲课来理解，于老师真的讲的超级好，能够让我们很轻松愉快地学到知识点，因为搭配了动画演示，所以很容易就理解了很多公式以及术语的实际物理含义）</li>
+<li>考试常用公式汇总（一定要看！！）</li>
+<li>3个仿真实验和大作业（这门课我们当时要求的是提交讲解视频，而不是报告，所以还算比较良心，写完代码生成完结果之后，拿着手机对着电脑屏幕录像，然后在一边说就行了，不需要出镜）</li>
+<li>教材部分课后习题答案</li>
+<li>有一个2007年自控试题建议先做一下，考察的比较全面且题型相同</li>
+<li>6套题目（含部分答案，其中基础试题题库和近三年的一定要做）</li>
+</ul>
+<h4 id="一些说明-2"><a href="#一些说明-2" class="headerlink" title="一些说明"></a>一些说明</h4><ul>
+<li>这门课存在着一些证明和推导，上课的时候一定要认真听！！很多的术语可能比较抽象，建议课后做题的时候多思考理解；</li>
+<li>思考难度不大，计算量也不大，主要是要把各种公式的推导和相互转换记清楚，别混淆了；</li>
+<li>关于实验：是祖传的实验和代码，我们当时是录视频讲解，如果形式不变的话，大家运行完代码后随便说几句，把这个实验要干嘛，代码中每一个部分是做什么的，然后分析一下实验结果即可。</li>
+</ul>
+<h4 id="关于Python"><a href="#关于Python" class="headerlink" title="关于Python"></a>关于Python</h4><p>该门课程以及图像信号处理的实验均需要用到<code>Python</code>，可安装<code>Pycharm</code>（可以“不太严谨“地理解为一个可视化工具）以及配置<code>Python</code>环境（有了环境才能编程），还没有接触过<code>python</code>的同学，请先访问<code>pycharm</code>官网进行软件的下载（其中Professional版本只能免费试用30天，激活需要激活码，Community版本是免费使用）：</p>
+<a class="button  center large" href='https://www.jetbrains.com/pycharm/' title='Pycharm 安装'><i class='fa-solid fa-paper-plane'></i> Pycharm 安装</a>
+
+<p>有关Professional版本的激活码获取或者永久激活插件，在csdn上一搜一大堆，这里就不进行赘述了。</p>
+<p>随后可参照以下文章进行配置：</p>
+<div class="tabs" id="tab-first-unique-name"><ul class="nav-tabs"><li class="tab active"><a class="#first-unique-name-1">Windows</a></li><li class="tab"><a class="#first-unique-name-2">MacOS</a></li></ul><div class="tab-content"><div class="tab-pane active" id="first-unique-name-1"><p><a class="button  center large" href='https://blog.csdn.net/qq_45502336/article/details/109531599?ops_request_misc=%257B%2522request%255Fid%2522%253A%25223718d24e4f54f1b0020ff81c9f81d820%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=3718d24e4f54f1b0020ff81c9f81d820&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~top_positive~default-1-109531599-null-null.nonecase&utm_term=python%E5%AE%89%E8%A3%85&spm=1018.2226.3001.4450' title='Python搭建全流程（保姆级）'><i class='fa-solid fa-paper-plane'></i> Python搭建全流程（保姆级）</a></p></div><div class="tab-pane" id="first-unique-name-2"><p><a class="button  center large" href='https://blog.csdn.net/qq_21694959/article/details/139785667?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522858282e74d07ac9dfecef16b95ebb542%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=858282e74d07ac9dfecef16b95ebb542&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~sobaiduend~default-1-139785667-null-null.nonecase&utm_term=mac%E9%85%8Dpython%E7%8E%AF%E5%A2%83&spm=1018.2226.3001.4450' title='mac搭建Python环境'><i class='fa-solid fa-paper-plane'></i> mac搭建Python环境</a></p></div></div></div>
 ]]></content>
       <categories>
         <category>Courses</category>
